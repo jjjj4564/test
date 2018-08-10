@@ -1,0 +1,52 @@
+@mixin linear-gradient($deg,$oneColor,$onePercent,$twoColor,$twoPercent,$threeColor,$threePercent)
+  background: $oneColor
+  background: -moz-linear-gradient($deg, $oneColor $onePercent, $twoColor $twoPercent, $threeColor $threePercent)
+  background: -webkit-linear-gradient($deg, $oneColor $onePercent,$twoColor $twoPercent, $threeColor $threePercent)
+  background: linear-gradient($deg, $oneColor $onePercent,$twoColor $twoPercent, $threeColor $threePercent)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$oneColor, endColorstr=$threeColor,GradientType=1 )
+
+
+@mixin appearance($style)
+  appearance: $style
+  -ms-appearance: $style
+  -moz-appearance: $style
+  -webkit-appearance: $style
+
+
+@mixin icon($img)
+  background-image: $img
+  background-position: center
+  background-repeat: no-repeat
+
+@mixin transform($content)
+  transform: $content
+  -ms-transform: $content
+  -moz-transform: $content
+  -webkit-transform: $content
+
+@mixin keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+@mixin animation($content)
+  -webkit-animation: $content
+  -moz-animation: $content
+  -o-animation: $content
+  animation: $content
+
+@mixin display-flex($content)
+  display: -webkit-flex
+  display: flex
+  -webkit-box-align: $content
+  -ms-flex-align: $content
+  align-items: $content
+
+@mixin flex($content)
+  flex: $content
+

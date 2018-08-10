@@ -1,0 +1,3001 @@
+@import "compass/mixin"
+
+$color-bg: #f0f0f0
+$color-white: #ffffff
+$color-gray: #929292
+$color-error: #df5151
+$color-band1: #cab8a2
+$color-band2: #9e836c
+$color-band3: #4f4047
+$color-red: #df5151
+$outline: rgba(95, 78, 87, 0.3) solid 3px
+
+$bootstrap-datetimepicker-widget-border: 8px solid
+
+$button-transition: 0.1s cubic-bezier(.08,.52,.52,1)
+
+
+div.enterprise-step-3.hide,div.enterprise-register-box.hide
+  display: block !important
+
+
+div.enterprise-step-1
+  display: none
+
+div.step-register
+  display: none
+
+
+.block-filter .block-info.test
+  position: fixed
+  top: 70px
+  z-index: 99999
+  width: 569px
+  background: white
+  box-shadow: 0px 2px 3px 0px #a3a3a330
+
+.test
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 9999
+
+.test:after
+  content: "這是設計稿 \f11c  Ⓟ"
+  font-family: FontAwesome, sans-serif
+  position: fixed
+  bottom: -5px
+  right: 26px
+  font-size: 50px
+  color: rgba(69, 57, 64, 0.1)
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.58)
+
+
+body
+  background: $color-bg
+  font-family: "PingFang TC", 'Noto Sans TC', 微軟正黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", sans-serif
+  letter-spacing: 0.01em
+
+body.open-confirm-add
+  overflow: hidden
+
+a
+  color: $color-band1
+  text-decoration: none
+
+a:hover,a:focus
+  color: darken($color-band1, 20%)
+  text-decoration: none
+  cursor: pointer
+
+a.underline:hover,a.underline:focus
+  text-decoration: underline
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  margin-top: 0px
+  font-weight: 400
+
+ol
+  padding-left: 2em
+  margin-bottom: 0
+  line-height: 1.8em
+  text-indent: 0.2em
+
+i
+  font-style: normal
+
+i.icon-arrow-left:after
+  content: "\f053"
+  font-family: FontAwesome
+
+i.icon-arrow-right:after
+  content: "\f054"
+  font-family: FontAwesome
+
+mark, .mark
+  padding: 0
+
+img
+  max-width: 100%
+
+.light
+  font-weight: 300
+
+.no-line
+  text-decoration: none
+
+.underline
+  text-decoration: underline
+
+input[type="checkbox"], input[type="radio"]
+  display: inline-block
+
+input[type="radio"]:focus
+  outline: none
+
+input[type="radio"]
+  +appearance(none)
+  margin-top: 0px
+  display: inline-block
+  -webkit-appearance: none
+  width: 15px
+  height: 15px
+  border: 1px solid #DCDDD9
+  margin-right: 10px
+  margin-left: 15px
+  margin-bottom: -2px
+
+
+input[type="radio"]:checked
+  background: $color-band2
+
+input[type="radio"] + span:hover, input[type="radio"]:hover
+  cursor: pointer
+
+input[type="radio"] + span
+  color: #929292
+  font-weight: 100
+  font-size: 14px
+
+.out-row
+  margin-right: -30px
+  margin-left: -30px
+
+/**/
+.block-edit .bootstrap-datetimepicker-widget
+  width: 280px !important
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5)
+  +transform(scale(1))
+  transform-origin: left top
+
+.block-edit .bootstrap-datetimepicker-widget .datepicker
+  width: 280px
+
+.block-edit .bootstrap-datetimepicker-widget
+  left: 5px !important
+
+.bootstrap-datetimepicker-widget
+  background: #fafafa
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4)
+
+.bootstrap-datetimepicker-widget .datepicker
+  background: white
+
+.bootstrap-datetimepicker-widget .col-md-6
+  padding-left: 0
+  padding-right: 0
+
+
+.bootstrap-datetimepicker-widget .row
+  margin-left: 0
+  margin-right: 0
+
+.bootstrap-datetimepicker-widget .timepicker td
+  border-right: none
+  border-left: none
+
+#datetimepicker12
+  overflow: hidden
+
+.bootstrap-datetimepicker-widget table
+  width: calc(100% + 1px)
+
+
+
+
+.bootstrap-datetimepicker-widget table td.day
+  height: 33px
+  border-radius: 100%
+
+.bootstrap-datetimepicker-widget
+  padding: 0px !important
+  margin-right: -1px
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after,.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before
+  //border-bottom-color: #5a494c
+  border-bottom-color: transparent
+
+.bootstrap-datetimepicker-widget .picker-switch td span
+  margin-top: 10px
+
+.bootstrap-datetimepicker-widget .btn-primary
+  background: none
+  color: $color-white
+  border: 1px solid $color-band3
+  background: $color-band3
+
+.bootstrap-datetimepicker-widget .btn-primary:active, .bootstrap-datetimepicker-widget .btn-primary.active
+  background: darken($color-band3,5%)
+
+.bootstrap-datetimepicker-widget table td.today:before,.bootstrap-datetimepicker-widget table td.active.today:before
+  border-bottom-color: $color-band3
+  border-bottom-color: transparent
+
+.bootstrap-datetimepicker-widget .timepicker tr td:last-child, .bootstrap-datetimepicker-widget .timepicker tr th:last-child
+  border-right: none
+  border-left: none
+
+.bootstrap-datetimepicker-widget .timepicker tr td:first-child, .bootstrap-datetimepicker-widget .timepicker tr th:first-child
+  border-right: none
+  border-left: none
+
+
+
+/**/
+.bootstrap-datetimepicker-widget table tr td.active, .bootstrap-datetimepicker-widget table tr td.active:hover, .bootstrap-datetimepicker-widget table tr td.active.disabled, .bootstrap-datetimepicker-widget table tr td.active.disabled:hover
+  +linear-gradient(0deg, $color-white ,0%,$color-white, 49%,$color-white, 100%)
+
+.bootstrap-datetimepicker-widget table tr td span.active, .bootstrap-datetimepicker-widget table tr td span.active:hover, .bootstrap-datetimepicker-widget table tr td span.active:focus
+  +linear-gradient(0deg, $color-white ,0%,$color-white, 49%,$color-white, 100%)
+
+.bootstrap-datetimepicker-widget table tr td.active, .bootstrap-datetimepicker-widget table tr td.active:hover, .bootstrap-datetimepicker-widget table tr td.active.disabled, .bootstrap-datetimepicker-widget table tr td.active.disabled:hover
+  position: relative
+  z-index: 1
+
+.bootstrap-datetimepicker-widget table tr td.active:after, .bootstrap-datetimepicker-widget table tr td.active:hover:after, .bootstrap-datetimepicker-widget table tr td.active.disabled:after, .bootstrap-datetimepicker-widget table tr td.active.disabled:hover:after
+  content: ""
+  border-radius: 100%
+  width: 28px
+  height: 28px
+  background: $color-band3
+  position: absolute
+  left: 50%
+  top: 47%
+  +transform(translate(-50%,-50%))
+  z-index: -1
+
+.bootstrap-datetimepicker-widget table tr td span.active, .bootstrap-datetimepicker-widget table tr td span.active:hover, .bootstrap-datetimepicker-widget table tr td span.active:focus
+  position: relative
+  z-index: 0
+
+.bootstrap-datetimepicker-widget table tr td span.active:after, .bootstrap-datetimepicker-widget table tr td span.active:hover:after, .bootstrap-datetimepicker-widget table tr td span.active:focus:after
+  content: ""
+  border-radius: 100%
+  width: 36px
+  height: 36px
+  background: $color-band3
+  position: absolute
+  left: 50%
+  top: 47%
+  +transform(translate(-50%,-50%))
+  z-index: -1
+
+.bootstrap-datetimepicker-widget table tr td.day:hover,.bootstrap-datetimepicker-widget tbody tr td span:hover
+  background: none
+  position: relative
+  z-index: 0
+  +transform(scale(1.5))
+
+.bootstrap-datetimepicker-widget table tr td.day:hover:after,.bootstrap-datetimepicker-widget tbody tr td span:hover:after
+  content: ""
+  border-radius: 100%
+  width: 32px
+  height: 32px
+  background: #eee
+  position: absolute
+  left: 50%
+  top: 47%
+  +transform(translate(-50%,-50%))
+  z-index: -1
+
+.bootstrap-datetimepicker-widget table tr td.day.active:hover:after
+  background: darken($color-band3,5%)
+
+.dropdown-menu
+  border: 0px
+  border-radius: 0px
+
+.bootstrap-datetimepicker-widget-dropdown:after
+  display: none
+
+.bootstrap-datetimepicker-widget-dropdown:before
+  border-bottom-color: #58474b
+
+.bootstrap-datetimepicker-widget
+  padding: 0px
+
+  thead tr:nth-child(1)
+    +linear-gradient(254deg, $color-band1 ,0%,$color-band2, 49%,$color-band3, 100%)
+    font-size: 16px
+    letter-spacing: 0.5px
+
+    th
+      color: white
+      position: relative
+
+    th.next ,th.prev
+      opacity: 0.5
+      width: 15%
+      font-size: 12px
+
+    th.switch
+      width: 70%
+      font-weight: 700
+
+    th.switch:hover,th.picker-switch:hover
+      background: rgba(238, 238, 238, 0.51)
+
+
+
+
+
+  thead tr:nth-child(2)
+    color: $color-band2
+    font-size: 12px
+
+  thead tr th
+    font-weight: 400
+    padding: 10px
+    letter-spacing: 0
+
+  thead tr th,tbody tr td
+    width: 44px
+    height: 44px
+    border-radius: 0px
+
+  tbody tr td span
+    border-radius: 0px
+
+.bootstrap-datetimepicker-widget thead tr:nth-child(2) th
+  padding-top: 25px
+
+.bootstrap-datetimepicker-widget tbody tr:last-child td
+  border-bottom: 20px solid
+  height: 40px
+
+.bootstrap-datetimepicker-widget tr td:first-child,.bootstrap-datetimepicker-widget tr th:first-child
+  border-left: $bootstrap-datetimepicker-widget-border
+
+.bootstrap-datetimepicker-widget tr td:last-child,.bootstrap-datetimepicker-widget tr th:last-child
+  border-right: $bootstrap-datetimepicker-widget-border
+
+.bootstrap-datetimepicker-widget table tr td.old,.bootstrap-datetimepicker-widget table tr td.new,.bootstrap-datetimepicker-widget table tr td.day
+  border-color: $color-white
+
+.bootstrap-datetimepicker-widget thead tr:nth-child(2) th:first-of-type,.bootstrap-datetimepicker-widget thead tr:nth-child(2) th:last-of-type
+  border-color: $color-white
+
+.bootstrap-datetimepicker-widget td
+  border-color: $color-white !important
+
+.bootstrap-datetimepicker-widget thead tr:nth-child(1) th:first-of-type
+  border-color: #554549
+
+.bootstrap-datetimepicker-widget thead tr:nth-child(1) th:last-of-type
+  border-color: #c6b49f
+
+.bootstrap-datetimepicker-widget thead tr:nth-child(1) th:hover
+  color: $color-band3
+
+.inline
+  display: inline-block
+  float: left
+
+.flex-align-center,.block-title,.block-info,.block-more,.author-meta,.post-reply-more,.post-reply-send,.message-box,.set-account-list .set-account-item,.bootstrap-datetimepicker-widget > .row,.set-item,.block-confirm-add,.post-permissions-select .option
+  +display-flex(center)
+
+.flex-align-start,.message
+  +display-flex(start)
+
+.bg-white
+  background: $color-white
+
+.bg-gray
+  background: $color-gray
+
+.bg-band1
+  background: $color-band1
+
+.bg-band2
+  background: $color-band2
+
+.bg-band3
+  background: $color-band3
+
+.bg1
+  background: $color-bg
+
+.bg2
+  +linear-gradient(254deg, $color-band1 ,0%,$color-band2, 49%,$color-band3, 100%)
+
+.input input::-webkit-input-placeholder, .input input::-moz-placeholder, .input input:-ms-input-placeholder, .input1 input:-moz-placeholder
+  color: $color-gray !important
+
+.input.style-2 input::-webkit-input-placeholder
+  color: $color-band2
+
+.input.style-2 input:-moz-placeholder
+  color: $color-band2
+
+.input.style-2 input::-moz-placeholder
+  color: $color-band2
+
+.input.style-2 input:-ms-input-placeholder
+  color: $color-band2
+
+.input.style-3 input::-webkit-input-placeholder
+  color: $color-band2
+
+.input.style-3 input:-moz-placeholder
+  color: $color-band2
+
+.input.style-3 input::-moz-placeholder
+  color: $color-band2
+
+.input.style-3 input:-ms-input-placeholder
+  color: $color-band2
+
+.input.style-4 input::-webkit-input-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 input:-moz-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 input::-moz-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 textarea:-ms-input-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 textarea::-webkit-input-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 textarea:-moz-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 textarea::-moz-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.input.style-4 textarea:-ms-input-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+#block-add-post .message textarea::-webkit-input-placeholder
+  color: $color-band3
+
+#block-add-post .message textarea:-moz-placeholder
+  color: $color-band3
+
+#block-add-post .message textarea::-moz-placeholder
+  color: $color-band3
+
+#block-add-post .message textarea:-ms-input-placeholder
+  color: $color-band3
+
+
+.metting-meeter::-webkit-input-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.metting-meeter:-moz-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.metting-meeter::-moz-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+.metting-meeter:-ms-input-placeholder
+  color: #c4c4c4
+  font-weight: 300
+
+
+.text-white
+  color: $color-white
+
+.text-gray
+  color: $color-gray
+
+.text-band1
+  color: $color-band1
+
+.text-band2
+  color: $color-band2
+
+.text-band3
+  color: $color-band3
+
+.text-red
+  color: $color-red
+
+
+.button1,.button1:hover,.button1:active,.button2:focus,.button2,.button2:hover,.button2:active,.button2:focus
+  transition: $button-transition
+
+.button1
+  text-align: center
+  border-radius: 5px
+  font-weight: 700
+  display: block
+  width: 100%
+  color: #fff
+  padding: 12px
+  letter-spacing: 0.1em
+  background: $color-band3
+  border: 1px solid transparent
+
+.button1:focus
+  outline: $outline
+
+.button1:hover,.button1:focus
+  color: darken($color-white, 5%)
+  background: darken($color-band3, 5%)
+  cursor: pointer
+  text-decoration: none
+
+.button1:active
+  color: darken($color-white, 10%)
+  background: darken($color-band3, 10%)
+  cursor: pointer
+
+.button2
+  border-radius: 5px
+  text-align: center
+  font-weight: 700
+  display: block
+  width: 100%
+  background: transparent
+  padding: 12px
+  letter-spacing: 0.1em
+  color: $color-band3
+  border: 1px solid $color-band3
+
+.button2:focus
+  outline: $outline
+
+.button2:hover,.button2:focus
+  color: $color-white
+  background: $color-band3
+  cursor: pointer
+  border-color: $color-band3
+
+.button2:active
+  color: darken($color-white, 5%)
+  background: darken($color-band3, 5%)
+  border-color: darken($color-band3, 5%)
+  cursor: pointer
+
+.button2:hover,.button2:focus
+  text-decoration: none
+
+
+.button3
+  border-radius: 5px
+  text-align: center
+  font-weight: 400
+  display: block
+  width: 100%
+  background: transparent
+  padding: 12px
+  letter-spacing: 0.1em
+  color: $color-band3
+  border: 1px solid $color-band3
+  width: 385px
+  margin-left: auto
+  margin-right: auto
+  font-size: 22px
+  transition: box-shadow 0.3s
+  max-width: 100%
+
+  &:hover,&:focus
+    color: $color-band3
+    background: darken($color-white,5%)
+    border-color: $color-band3
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08)
+    transition: box-shadow 0.3s
+    text-decoration: none
+    outline: none
+
+  &:active
+    color: darken($color-white, 5%)
+    background: darken($color-band3, 5%)
+    border-color: darken($color-band3, 5%)
+    cursor: pointer
+    outline: none
+
+.button3-1
+  border-radius: 5px
+  text-align: center
+  font-weight: 400
+  display: block
+  width: 100%
+  background: transparent
+  padding: 12px
+  letter-spacing: 0.1em
+  color: $color-white
+  border: 1px solid $color-band3
+  width: 385px
+  margin-left: auto
+  margin-right: auto
+  font-size: 22px
+  transition: box-shadow 0.3s
+  max-width: 100%
+  background: $color-band3
+
+  &:focus
+    outline: $outline
+
+  &:hover,&focus
+    cursor: pointer
+    color: $color-white
+    background: darken($color-band3,10%)
+    border-color: darken($color-band3,10%)
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08)
+    transition: box-shadow 0.3s
+    text-decoration: none
+    outline: none
+
+  &:active
+    color: darken($color-white, 5%)
+    background: darken($color-band3, 5%)
+    border-color: darken($color-band3, 5%)
+    cursor: pointer
+    outline: none
+
+.button4.disabled
+  opacity: 0.6
+
+  &:hover,&:focus
+    box-shadow: none
+    background: $color-white
+    color: $color-band3
+    cursor: default
+
+  &:active
+    color: $color-band3
+
+
+.button4
+  border-radius: 5px
+  text-align: center
+  font-weight: 400
+  display: block
+  width: 100%
+  background: transparent
+  padding: 12px
+  letter-spacing: 0.1em
+  color: $color-band3
+  border: 1px solid $color-band3
+  width: 385px
+  margin-left: auto
+  margin-right: auto
+  font-size: 22px
+  transition: box-shadow 0.3s
+  max-width: 100%
+
+  &:hover,&:focus
+    color: $color-white
+    background: $color-band3
+    border-color: $color-band3
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08)
+    transition: box-shadow 0.3s
+    text-decoration: none
+    outline: none
+
+  &:active
+    color: darken($color-white, 5%)
+    background: darken($color-band3, 5%)
+    border-color: darken($color-band3, 5%)
+    cursor: pointer
+    outline: none
+
+
+
+.btn.style-2
+  background: $color-band3
+  color: white
+  width: 110px
+  height: 30px
+  line-height: 28px
+  padding: 0
+  margin-right: 15px
+
+.btn.style-2:focus,.btn.style-2:hover
+  outline: none
+  background: darken($color-band3, 5%)
+
+.btn.style-3
+  background: transparent
+  color: $color-band3
+  height: 30px
+  line-height: 28px
+  padding: 0 10px
+  margin-right: 15px
+  border: 1px solid $color-band3
+
+  .p-icon
+    position: relative
+    margin-right: 5px
+    font-size: 22px
+    top: 2px
+    line-height: 19px
+
+.btn.style-2.o
+  background: $color-white
+  border: 1px solid $color-band3
+  color: $color-band3
+
+.btn.style-2.o:hover
+  background: darken($color-white,5%)
+
+.btn.style-3:focus,.btn.style-3:hover
+  outline: none
+  background: darken($color-white, 5%)
+
+.btn.style-3:after
+  content: "\e823"
+  font-family: planXcape
+  margin-left: 8px
+  font-size: 12px
+
+
+.bootstrap-datetimepicker-widget-inline
+  width: 100%
+  +transform(scale(1))
+  opacity: 1
+  pointer-events: auto
+
+.bootstrap-datetimepicker-widget-inline table
+  width: 100%
+
+.bootstrap-datetimepicker-widget-inline thead tr th, .bootstrap-datetimepicker-widget-inline tbody tr td
+  height: 13%
+  border-radius: 0px
+  width: 13%
+
+.bootstrap-datetimepicker-widget-inline thead tr th
+  padding: 12px 0
+
+.table-condensed > tbody > tr > td
+  padding: 0
+
+.bootstrap-datetimepicker-widget-inline tbody tr td
+  border-radius: 100%
+  height: 37px
+  width: 30px
+
+
+/*input*/
+.input
+  display: block
+  position: relative
+  width: 100%
+
+  input,select,textarea
+    +appearance(none)
+    width: 100%
+    padding: 20px 2em
+    border: 1px solid #DCDDD9
+    border-radius: 5px
+    background: transparent
+    color: #4f4047
+    letter-spacing: 0.1em
+    transition: box-shadow 0.3s
+    resize: none
+    font-weight: 400
+
+    &:focus
+      outline: none
+      border-color: $color-band3
+      box-shadow: 0 0 0 transparent,0px 15px 30px 0px rgba(0, 0, 0, 0.08)
+      transition: box-shadow 0.2s
+
+  input:-webkit-autofill
+    -webkit-box-shadow: 0 0 transparent, 0 0 0 1000px #f9f9f9 inset !important
+
+  textarea
+    min-height: 150px
+
+  select:hover
+    background: #fcfcfc
+    cursor: pointer
+
+  &.is_check:after
+    content: "\f00c"
+    font-family: FontAwesome
+    right: 25px
+    position: absolute
+    top: 16px
+    color: #8ac94b
+    font-size: 20px
+
+
+  &.input-group
+    input,.input-icon
+      padding-right: 0px
+      display: inline-block
+      float: left
+
+    input
+      width: calc(100% - 62px)
+      border-top-right-radius: 0px
+      border-bottom-right-radius: 0px
+
+    .input-icon
+      width: 62px
+      height: 62px
+      font-size: 17px
+      font-weight: 400
+      line-height: 1
+      color: #bcbeb6
+      text-align: center
+      background-color: #fff
+      border: 1px solid #dcddd9
+      border-radius: 0 5px 5px 0
+      border-left: 0
+
+      i
+        font-size: 17px
+        line-height: 61px
+
+  input:-webkit-autofill:focus
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08),0 0 0 1000px #f9f9f9 inset !important
+
+  input:focus ~ .input-icon
+    box-shadow: 7px 15px 30px 0px rgba(0, 0, 0, 0.08)
+    border-color: $color-band3
+    transition: box-shadow 0.2s
+    color: $color-band3
+
+  &[class*=icon-]:after
+    font-family: planXcape
+    color: $color-band3
+    position: absolute
+    right: 0
+    top: 0
+    pointer-events: none
+    font-size: 32px
+    margin-right: 25px
+    line-height: 52px
+    padding: 6px 0
+    font-weight: 100
+    +transform(scale(1))
+    transition: 0.2s
+    width: 31px
+    text-align: center
+
+  &.icon-account:after
+    content: "\e841"
+
+  &.icon-password:after
+    content: "\e839"
+
+  &.icon-arrow-down:after
+    content: "\e827"
+    color: #DCDDD8
+    font-size: 24px
+
+  .placeholder
+    position: absolute
+    top: 31px
+    left: 29px
+    letter-spacing: 0.1em
+    margin-top: -10px
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    color: $color-gray
+    font-weight: 400
+    pointer-events: none
+
+
+  input, textarea, select
+    &:focus, &.hastext
+      & ~ .placeholder
+        top: -16px
+        left: 0
+        color: #4f4047
+        font-size: 15px
+
+    &:-webkit-autofill
+      & ~ .placeholder
+        top: -16px
+        left: 0
+        color: #4f4047
+        font-size: 15px
+
+  input, textarea, select
+    &.iserror
+      &:focus, &.hastext
+        & ~ .placeholder
+          color: $color-error
+      &:-webkit-autofill
+        & ~ .placeholder
+          color: $color-error
+
+  &.week-password,&.week-password
+    input:focus, input.hastext
+      & ~ .placeholder
+        color: $color-error
+
+  &.error-email,&.error-email
+    input:focus, input.hastext
+      & ~ .placeholder
+        color: $color-error
+
+  &.error-repeat,&.error-repeat
+    input:focus, input.hastext
+      & ~ .placeholder
+        color: $color-error
+
+  .tip,.error-email-tip
+    position: relative
+    bottom: -5px
+    margin-bottom: 10px
+    color: #9da0a4
+    font-weight: 400
+
+  .error-tip,.error-repeat-tip
+    display: none
+
+  input
+    &.iserror
+      border-color: $color-error
+
+      & ~ .error-tip
+        display: block
+        position: relative
+        bottom: -5px
+        margin-bottom: 10px
+        color: $color-error
+        font-weight: 400
+
+  &.error-email, &.week-password, &.error-repeat
+    input
+      border-color: $color-error
+
+  &.error-email .error-email-tip,&.week-password .tip,&.error-repeat input ~ .error-repeat-tip
+    display: block
+    position: relative
+    bottom: -5px
+    margin-bottom: 10px
+    color: $color-error
+    font-weight: 400
+
+  &.style-3
+    input
+      padding: 5px 10px
+      border-radius: 0
+
+  &.style-4
+    margin-top: 20px
+    margin-bottom: 15px
+
+    &.icon-arrow-down:after
+      font-size: 20px
+      margin-right: 10px
+      line-height: 31px
+      +transform(scale(1))
+      transition: 0.3s
+
+    input, textarea, select
+      padding: 10px 15px
+
+    input, textarea, select
+      &:focus, &.hastext
+        & ~ .placeholder
+          top: -11px
+          font-size: 13px
+          font-weight: 400
+      &:-webkit-autofill
+        & ~ .placeholder
+          top: -11px
+          font-size: 13px
+          font-weight: 400
+
+
+
+    textarea
+      min-height: 100px
+
+    .placeholder
+      top: 21px
+      left: 15px
+      color: #c4c4c4
+      font-weight: 100
+
+
+    &.input-group
+      input
+        width: calc(100% - 42px)
+
+      .input-icon
+        width: 42px
+        height: 42px
+        font-size: 17px
+
+        i
+          font-size: 17px
+          line-height: 40px
+
+        .p-icon
+          font-size: 22px
+
+  &.style-5
+    margin-top: 20px
+    margin-bottom: 25px
+
+/*style1*/
+
+.input.style-1
+  display: block
+  position: relative
+
+.input.style-1 input,.input.style-1 select
+  +appearance(none)
+  width: 100%
+  padding: 12px
+  border: 2px solid #DCDDD9
+  border-radius: 5px
+  background: transparent
+  color: $color-band3
+  letter-spacing: 0.1em
+
+.input.style-1 input:focus,.input.style-1 select:focus
+  outline: $outline
+
+.input.style-1 input.hastext,.input.style-1 select.hastext
+  //border-color: $color-band3
+  color: $color-band3
+
+
+.input.style-1.icon-arrow-down:after,.input.style-1.icon-arrow-down:after
+  content: "\e827"
+  font-family: planXcape
+  color: #858686
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 30px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  +transform(scale(1))
+  transition: 0.3s
+
+
+.input.style-1.icon-calendar:after,.input.style-1.icon-calendar:after
+  content: "\f073"
+  font-family: FontAwesome
+  color: #858686
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 18px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+
+.input.icon-calendar:after
+  content: "\f073"
+  font-family: FontAwesome
+  color: #858686
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 18px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  +transform(scale(1))
+  transition: 0.3s
+
+.input.style-1.icon-search:after
+  content: "\f002"
+  font-family: FontAwesome
+  color: #858686
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 18px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  +transform(scale(1))
+  transition: 0.3s
+
+.input.style-1.is-check:after
+  content: "\f00c"
+  font-family: FontAwesome
+  color: #53BAAB
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 18px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  +transform(scale(1))
+  transition: 0.3s
+
+.input.style-1:after
+  content: " "
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 18px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  +transform(scale(1))
+  transition: 0.3s
+
+.input.style-1.check-load:after
+  +transform(scale(0))
+  transition: 0.3s
+
+
+.input.style-1:before
+  content: "\f110"
+  font-family: FontAwesome
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 18px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  color: #5f4e57
+  opacity: 0
+  +transform(rotate(0deg))
+  transition: opacity 1.2s
+
+.input.style-1.check-load:before
+  opacity: 0.6
+  transition: opacity 1.2s
+  +animation(check-load 1s infinite linear)
+
++keyframes(check-load)
+  from
+    +transform(rotate(0deg))
+  to
+    +transform(rotate(360deg))
+
+/*style2*/
+
+.input.style-2
+  display: block
+  position: relative
+
+.input.style-2 input,.input.style-2 select
+  +appearance(none)
+  width: 375px
+  padding: 11px
+  border: 1px solid #f1f1f1
+  border-radius: 5px
+  background: transparent
+  color: $color-band3
+  letter-spacing: 0.1em
+  font-weight: 400
+
+.input.style-2 input:focus,.input.style-2 select:focus
+  outline: none
+  border: 1px solid $color-band3
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08)
+  transition: 0.2s
+
+
+.input.style-2 input.hastext,.input.style-2 select.hastext
+  //border-color: $color-band3
+  color: $color-band2
+
+.input.style-2.icon-search:after
+  content: "\e828"
+  font-family: planXcape
+  color: #858686
+  position: absolute
+  right: 0
+  top: 0
+  pointer-events: none
+  font-size: 25px
+  margin-right: 20px
+  line-height: 34px
+  padding: 6px 0
+  font-weight: 100
+  +transform(scale(1))
+  transition: 0.3s
+
+
+.enterprise-tag-list ~ .title
+  position: absolute
+  top: -5px
+  letter-spacing: 0.1em
+
+.enterprise-tag-list
+  width: 100%
+  padding: 10px 25px 5px
+  border: 1px solid #DCDDD9
+  border-radius: 5px
+  background: transparent
+  color: #929292
+  letter-spacing: 0.1em
+  box-shadow: 0px 0px 1px 0px #e6e6e6 inset
+  resize: none
+  margin-bottom: 20px
+  margin-top: 20px
+
+li.disabled-tag
+  display: none!important
+
+.enterprise-tag-list li:nth-child(4)
+  display: none
+
+.enterprise-tag-list li.disabled-tag:nth-child(5)
+  display: block!important
+
+.enterprise-tag-list > li
+  list-style: none
+  padding: 8px 15px
+  float: left
+  display: inline-block
+  margin-right: 7px
+  margin-bottom: 4px
+  font-size: 16px
+
+  input
+    border: none
+    font-size: 14px
+    letter-spacing: 0.1em
+    width: 12em
+
+  input:focus
+    outline: none
+
+.tab-controller > *
+  cursor: pointer
+
+.tab-controller > a
+  text-decoration: underline
+
+
+.container
+  width: 1200px
+  max-width: 100vw
+  margin-right: auto
+  margin-left: auto
+
+.tags-box
+  width: 100%
+  padding: 7px 8px 2px
+  border: 1px solid #DCDDD9
+  border-radius: 5px
+  background: transparent
+  color: #4f4047
+  letter-spacing: 0.1em
+  resize: none
+  margin-bottom: 15px
+  margin-top: 20px
+
+
+.tags-box ~ .title
+    position: absolute
+    top: -1px
+    font-size: 13px
+    letter-spacing: 0.1em
+    color: $color-band3
+
+.tags-box > li
+  list-style: none
+  padding: 3px 10px
+  float: left
+  display: inline-block
+  margin-right: 7px
+  margin-bottom: 4px
+  border-radius: 2px
+
+  input
+    border: none
+    font-size: 14px
+    letter-spacing: 0.1em
+
+  input:focus
+    outline: none
+
+.tags
+  background: $color-band2
+  color: white
+  border-radius: 5px
+
+  i
+    margin-left: 10px
+    margin-right: -5px
+
+  i:hover
+    cursor: pointer
+
+.new-tag
+  position: relative
+
+
+.metting-meeter-tip
+  background: white
+  position: absolute
+  top: 30px
+  left: 0px
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4)
+  border-radius: 2px
+  z-index: 1
+  width: 190px
+
+.metting-meeter-tip > ul
+  margin-bottom: 0
+  padding-left: 0
+
+  li
+    list-style: none
+    padding: 10px 20px
+
+    .avater
+      max-height: 30px
+      border-radius: 100%
+
+    .name
+      padding-left: 18px
+
+  li.active
+    background: darken($color-white,5%)
+    cursor: pointer
+
+
+
+.post-reply,.post-header,.message,.user-info
+  .author-avater,.user-avater
+    box-shadow: 0px 0px 0px 40px rgba($color-band2,0.01)
+
+.user-avater,.author-avater
+  border-radius: 100%
+  margin-right: 15px
+  position: relative
+  height: 50px
+  width: 50px
+
+  img
+    border-radius: 100%
+    height: 100%
+    width: 100%
+
+#footer
+  background: white
+  box-shadow: 3px -3px 20px -8px rgba(0, 0, 0, 0.1)
+  z-index: 10
+  height: 70px
+  //position: fixed
+  //bottom: 0
+  //left: 0
+  //right: 0
+
+
+#top-menu
+  background: white
+  box-shadow: 3px 3px 20px -8px rgba(0, 0, 0, 0.1)
+  z-index: 10
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+
+  .container
+    height: 70px
+
+  .top-logo
+    height: 100%
+    width: 70px
+    float: left
+    box-shadow: 3px 3px 20px -8px rgba(0, 0, 0, 0.2)
+
+    .logo
+      height: 100%
+      width: 100%
+      background-image: url('../img/P.png')
+      background-repeat: no-repeat
+      background-position: center
+
+  .top-search
+    height: 100%
+    float: left
+    padding: 13px 25px
+
+  #grid-menu
+    float: right
+
+    > ul
+      padding-left: 0
+      margin-bottom: 0
+      display: table
+
+      > li:hover,> li.open
+        background: darken($color-white,5%)
+        cursor: pointer
+
+      > li.open + .tooltip
+        z-index: -1
+
+      > li
+        list-style: none
+        display: block
+        float: left
+        height: 70px
+        width: 70px
+        border-left: #f1f1f1 solid 1px
+        position: relative
+
+        > .menu-icon
+          font-family: planXcape
+          width: 100%
+          height: 100%
+
+
+  #user-info:hover
+    background: darken($color-white, 5%)
+    cursor: pointer
+
+    .user-info-set .p-more
+      color: darken(#929292, 20%)
+
+  #user-info
+    height: 100%
+    float: right
+    width: 250px
+    border-left: #f1f1f1 solid 1px
+    border-right: #f1f1f1 solid 1px
+    position: relative
+
+    .user-avater
+      height: 50px
+      width: 50px
+      border-radius: 100%
+      margin-left: 17px
+      margin-right: 15px
+      position: relative
+      overflow: hidden
+
+    .user-name
+      font-size: 18px
+      color: $color-band1
+
+    .user-title
+      font-size: 12px
+      color: $color-band3
+
+    .user-info-set
+      position: absolute
+      right: 10px
+
+    .user-info-set .p-more
+      font-size: 24px
+      +transform(rotate(90deg))
+      color: #929292
+
+    .window-user-set
+      width: 100%
+      top: 70px
+
+      .user-avater
+        box-shadow: none
+        width: 37px
+        height: 37px
+
+      .user-name
+        font-size: 14px
+        color: $color-band2
+
+      .set-permissions:hover
+        background: darken($color-white,5%)
+        cursor: pointer
+
+      .set-box
+        padding: 0.8em 0px
+        border-bottom: 1px solid #ededed
+        box-shadow: 0px -1px 0px 0px #f2f2f2 inset
+        font-size: 12px
+
+        ul
+          margin-bottom: 0
+          padding-left: 0
+
+          li
+            list-style: none
+            line-height: 39px
+            color: $color-band3
+            padding: 0 17px
+
+            i
+              font-size: 24px
+              margin-right: 0.5em
+              margin-top: -1px
+
+
+      .set-account
+
+        li:hover
+          cursor: pointer
+          background: #f1f1f1
+
+
+#main
+  padding: 90px 0 20px
+  min-height: calc(100vh - 70px)
+
+#main.open-post
+  #block-add-post
+    z-index: 999
+    .block-edit,.bottom-sub,.bottom-set
+      display: block
+
+    .btn-list .active:before
+      bottom: -2px
+      position: absolute
+      border: 5px solid #ffffff
+      content: ""
+      border-top: 5px solid transparent
+      border-left: 5px solid transparent
+      border-right: 5px solid transparent
+      left: 50%
+      margin-left: -5px
+      z-index: 2
+
+    .btn-list .active:after
+      bottom: -2px
+      position: absolute
+      border: 7px solid #ebebeb
+      content: ""
+      border-top: 7px solid transparent
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      left: 50%
+      margin-left: -7px
+      z-index: 1
+
+
+#main:after
+  background: rgba(0, 0, 0, 0.75)
+  width: 0vw
+  position: fixed
+  height: 0vh
+  z-index: 99
+  content: ""
+  left: 0
+  top: 0
+  opacity: 0
+  transition: opacity 0.3s
+
+#main.open-post:after
+  background: #000
+  width: 100vw
+  position: fixed
+  height: 100vh
+  z-index: 99
+  content: ""
+  left: 0
+  top: 0
+  opacity: 0.75
+  transition: opacity 0.3s
+
+
+#block-add-post .block-edit,#block-add-post .bottom-sub,#block-add-post .bottom-set
+  display: none
+
+#block-add-post .message .textarea
+  max-height: 80px
+  transition: font-size 0.3s
+
+#block-add-post .message .textarea_highlights
+  transition: font-size 0.3s
+  width: 747.98px
+  height: 78px
+
+#main.open-post #block-add-post .message .textarea
+  max-height: none
+  font-size: 18px
+  transition: font-size 0.3s
+
+#main.open-post #block-add-post .message .textarea_highlights
+  max-height: none
+  font-size: 18px
+  transition: font-size 0.3s
+  pointer-events: none
+  white-space: pre-wrap
+
+#main.open-post #block-add-post .btn-list .btn-item.active
+  opacity: 1
+  box-shadow: 0px -30px 46px -62px #000 inset
+
+#main.open-post #block-add-post .btn-list .btn-item
+  opacity: 0.5
+  position: relative
+
+
+input[type=checkbox]
+
+
+input[type=checkbox] + .toggle-btn
+  border: 3px solid #ebebeb
+  width: 40px
+  height: 15px
+  border-radius: 30px
+  position: relative
+  transition: background 0.3s
+  margin-bottom: 0
+
+  &:checked, &:hover:after
+    cursor: pointer
+
+  &:after
+    content: ""
+    width: 30px
+    height: 30px
+    background: #ffffff
+    position: absolute
+    top: 50%
+    margin-top: -16px
+    left: -13px
+    border-radius: 100%
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.15)
+    transition: left .3s cubic-bezier(0.175, 0.885, 0.320, 1.275)
+
+input[type=checkbox]:checked + .toggle-btn
+  background: #ebebeb
+  transition: background 0.3s
+
+  &:after
+    left: 17px
+    background: #4f4047
+    transition: left .3s cubic-bezier(0.175, 0.885, 0.320, 1.275)
+
+
+/*block*/
+
+.block-loading
+  text-align: center
+  color: #9e836c
+  line-height: 40px
+  padding-top: 10px
+  border-top: 1px solid #f1f1f1
+  height: 50px
+
+
+.block-menu
+  .block-title
+    color: $color-band2
+
+
+
+.block-meeting.open:hover
+  box-shadow: 0px 0px 0px 1px rgba($color-band3, 0.7) inset
+
+.block-meeting.open:hover .block-meeting-header:hover
+  box-shadow: 0px 1px 0px 0px rgba($color-band3, 0.7) inset, 1px 0px 0px 0px rgba($color-band3, 0.7) inset, -1px 0px 0px 0px rgba($color-band3, 0.7) inset
+
+#block-important .block-container
+  //height: 350px
+  //min-height: 350px
+  overflow: scroll
+  transition: height 0.3s
+
+.block-edit
+  border-top: #ebebeb solid 2px
+  padding: 20px 15px
+
+#fix-left .block:last-child, #fix-right .block:last-child
+    margin-bottom: 0px
+
+.block
+  width: 100%
+  background: white
+  position: relative
+  box-shadow: 3px 3px 20px -8px rgba(0, 0, 0, 0.1)
+  margin-bottom: 20px
+  //overflow: hidden
+
+  .top-line
+    background: $color-band3
+    height: 5px
+
+  .bottom-btn
+    border-top: #ebebeb solid 2px
+
+  .bottom-sub,.bottom-set
+    border-top: #ebebeb solid 1px
+
+  .message-submit
+    float: right
+    height: 100%
+
+  .btn-list.style-1
+    float: left
+
+  .btn-list.style-1 > div
+    color: $color-band3
+    float: left
+    padding: 0 30px
+    height: 50px
+    line-height: 45px
+
+  .btn-list.style-1 > div:hover
+    background: darken($color-white,5%)
+    cursor: pointer
+
+  .block-container
+
+    ul
+      padding-left: 0
+      margin-bottom: 0px
+
+    ul > li
+      list-style: none
+
+.block-tab .tab
+  text-align: center
+  line-height: 50px
+  height: 50px
+  color: $color-band3
+  border-top: #f1f1f1 solid 2px
+  border-right: #f1f1f1 solid 2px
+  background: #f6f4f2
+
+/*.block-meeting .block-container-toggle
+    position: absolute
+    right: 0px
+    top: 0px
+
+.block-meeting .block-container-toggle:before
+  content: "\e815"
+  font-family: planxcape
+  margin-left: 0.3em
+  color: #e1e1e1
+
+.block-meeting .block-container-toggle:hover:before
+  cursor: pointer
+  color: $color-band2
+
+.block-meeting .block-meeting-container
+  display: none
+
+.block-meeting.open .block-container-toggle:before
+  content: "\e813"
+
+.block-meeting.open .block-meeting-container
+  display: block
+
+.block-meeting
+  border-top: #f1f1f1 solid 2px
+
+  .block-meeting-header:hover
+    background: darken($color-white,5%)
+    cursor: pointer
+
+    .block-container-toggle:before
+      color: $color-band2
+
+  .block-meeting-header
+    padding: 10px 15px 15px
+    position: relative
+
+    .block-meeting-time
+      font-weight: 700
+      color: $color-band3
+      font-size: 12px
+      padding: 5px 0px 15px
+
+    .block-meeting-title
+      font-size: 11px
+      padding-right: 23px
+      position: relative
+
+    .block-container-toggle
+      position: absolute
+      right: 18px
+      top: 14px
+
+    .block-meeting-time:before
+      content: "•"
+      font-family: FontAwesome
+      margin-right: 0.5em
+      text-shadow: 0px 0px 1px $color-band3, 0px 0px 1px $color-band3 ,0px 0px 1px $color-band3,0px 0px 1px $color-band3
+
+  .block-meeting-container
+    padding-top: 5px
+
+    .author-msg
+      font-size: 18px
+      color: $color-band3
+
+    .author-meta
+      font-size: 12px
+      color: $color-gray
+
+    .block-inner-container
+      padding: 0 15px
+      padding-bottom: 20px
+
+      .author-avater
+        margin-right: 10px
+
+      .block-inner-position
+        color: $color-band3
+
+      .block-meeting-intro
+        color: $color-band3
+
+      .block-inner-title
+        font-size: 12px
+        color: $color-band3
+        margin-bottom: 5px
+        font-weight: 700
+
+      .block-inner-meeter
+
+        .block-meeter
+          padding-left: 0px
+          margin-bottom: 0px
+
+          li
+            list-style: none
+            display: inline-block
+
+            .user-avater
+              width: 30px
+              height: 30px
+              margin-right: 5px
+              margin-bottom: 9px
+
+            .user-avater.none
+              background: #f3f3f3
+              border: 1px solid #d9d9d9
+              line-height: 31px
+              text-align: center
+              width: 32px
+              height: 32px
+              cursor: pointer
+              position: relative
+              top: 2px
+
+      ol
+        padding-left: 1.1em
+        color: $color-band3
+
+.block-tab .tab.active
+  background: $color-white
+
+.block-tab .tab:hover
+  background: darken(#f6f4f2,5%)
+  cursor: pointer
+
+.block-tab .tab:last-child
+  border-right: #f1f1f1 solid 0px
+
+.block-more:hover .block-text
+  text-decoration: underline
+  -webkit-text-decoration-color: darken($color-band1,20%)
+  text-decoration-color: darken($color-band1,20%)
+  color: darken($color-band1,20%)
+
+.block-more:hover
+  cursor: pointer
+
+.block-more
+  padding: 0px 21px
+  height: 50px
+  font-size: 16px
+  border-top: 1px solid #f1f1f1
+  box-shadow: 0px 1px 0px 0px #fafafa inset
+  color: $color-band1
+
+  .block-text
+    font-size: 14px
+    margin: auto
+
+    i
+      font-size: 15px
+
+
+.block-set:hover
+  cursor: pointer
+  color: darken($color-band1,20%)
+
+.block-set
+  color: $color-band1
+
+.block-title
+  letter-spacing: 0.05em
+  font-weight: 500
+  border-bottom: #f1f1f1 solid 1px
+
+.block-title, .block-info
+  padding: 0 0 0 21px
+  height: 50px
+  font-size: 16px
+  color: $color-band3
+  border-top: #f1f1f1 solid 1px
+
+  .title-icon
+    width: 30px
+    height: 30px
+    font-family: planXcape
+
+  .block-icon-right
+    font-size: 24px
+    position: absolute
+    right: 15px
+
+  .block-text
+    font-size: 12px
+    line-height: 1em
+    width: 87%
+    width: calc(100% - 45px)
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+  .user-avater
+    height: 35px
+    width: 35px
+
+  .user-avater:before
+    content: ""
+    width: 7px
+    height: 7px
+    background: #00a828
+    position: absolute
+    top: 1%
+    right: 1%
+    border-radius: 100%
+    border: 1px solid #fff
+
+  .user-contact
+    width: 80%
+
+  .user-name
+    font-size: 16px
+    color: $color-band1
+
+  .user-title
+    font-size: 12px
+    color: $color-band3
+    width: 90%
+    width: calc(100% - 15px)
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+.block-info
+  border-top: 1px solid #f1f1f1
+
+.block-info:hover
+  background: darken($color-white,5%)
+  cursor: pointer
+
+
+#block-add-post
+
+  .message
+    padding: 15px
+    min-height: 115px
+    height: auto
+
+    .user-avater
+      height: 50px
+      width: 50px
+
+    .input-text
+      width: 83%
+      width: calc(100% - 65px)
+
+    .avater
+      height: 50px
+      width: 50px
+      border-radius: 100%
+      margin-right: 15px
+      position: relative
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+
+    .textarea
+      width: 100%
+      height: 100%
+      border: 0px
+      resize: none
+      font-size: 16px
+      color: $color-band3
+      padding-top: 15px
+      letter-spacing: 0.05em
+      position: relative
+      z-index: 1
+      background: transparent
+
+    .textarea_highlights
+      font-size: 16px
+      color: transparent
+      padding: 2px
+      padding-top: 15px
+      letter-spacing: 0.05em
+      position: absolute
+      z-index: 2
+      background: transparent
+
+    textarea:focus
+      outline: none
+
+  .bottom-btn div
+    height: 45px
+
+  .bottom-sub div
+    height: 50px
+
+  .bottom-set > div
+    height: 65px
+    width: 50%
+    float: left
+    padding: 20px 15px
+
+  .bottom-set > div:first-child
+    border-right: #ebebeb solid 1px
+
+  .btn-list.style-1 div
+    border-right: 2px solid #ebebeb
+
+#block-filter
+  .block-text
+    font-size: 14px
+
+  .block-info
+    /*background: white*/
+    position: relative
+
+  .block-tab
+    margin-top: -50px
+    position: relative
+    z-index: 0
+    transition: 0.3s
+
+  &:hover
+    .block-set
+      cursor: pointer
+      color: #a58661
+
+#block-post
+  .post-header
+    padding: 15px
+
+    .author-box
+      width: 80%
+      width: calc(100% - 105px)
+
+      .author-msg
+
+        .name
+          font-size: 16px
+
+        .msg
+          font-size: 15px
+          color: $color-band3
+
+      .author-meta
+        font-size: 12px
+        color: $color-gray
+
+    .block-set
+      font-size: 24px
+      position: absolute
+      right: 15px
+      top: 15px
+
+
+  .post-container
+    padding: 0px 15px 25px
+    color: $color-band3
+
+  .post-intro
+    font-size: 15px
+
+  .post-permission
+    font-size: 18px
+
+  .post-permission:before
+    content: "．"
+    margin-left: -0.1em
+
+  .metting .post-inner
+    margin-top: 30px
+    border-radius: 5px
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12)
+    border: 1px solid #f1f1f1
+    position: relative
+
+    .post-inner-load-more
+      position: absolute
+      left: 50%
+      margin-left: -52px
+      border: 1px solid $color-band2
+      padding: 5px 30px
+      background: white
+      bottom: -16px
+      border-radius: 5px
+      font-size: 13px
+      color: $color-band2
+
+    .post-inner-load-more.open
+      border: 1px solid #e7e0db
+      color: #e7e0db
+
+    .post-inner-load-more.open:hover
+      border: 1px solid #bca898
+      color: #d1c2b7
+
+    .post-inner-load-more:hover
+      cursor: pointer
+      text-decoration: underline
+
+  .confirm .post-inner
+    box-shadow: none
+    border: none
+    margin-top: 30px
+
+
+  .metting .post-inner-container
+    padding: 15px
+    padding-bottom: 25px
+    border-top: 1px solid #f1f1f1
+    box-shadow: 0px 1px 0px 0px rgba(250, 250, 250, 1) inset
+
+    .post-title
+      font-size: 16px
+      color: $color-band2
+      margin-bottom: 15px
+
+    .post-inner-title
+      color: $color-band3
+      letter-spacing: 0.05em
+      margin-bottom: 15px
+
+    .post-info-list
+      padding-left: 10px
+      margin-bottom: 0
+      line-height: 1.7em
+
+      li
+        list-style: none
+
+      .title
+        color: $color-band3
+
+      .title:after
+        content: '：'
+
+      .desc
+        color: $color-band2
+        position: relative
+
+      .post-map
+        font-size: 29px
+        position: absolute
+        top: -4px
+        right: -40px
+        color: $color-band3
+
+      .post-map:hover
+        cursor: pointer
+
+    .post-meeter-list
+      padding-left: 0
+      margin-bottom: 0px
+      margin-left: 10px
+
+      li
+        list-style: none
+        display: inline-block
+
+      .user-avater
+        width: 33px
+        height: 33px
+        margin-right: 3px
+
+      .user-avater.none
+        background: #f3f3f3
+        border: 1px solid #d9d9d9
+        line-height: 34px
+        text-align: center
+        width: 35px
+        height: 35px
+        cursor: pointer
+        position: relative
+        top: 1px
+
+    .post-tag-list
+      padding-left: 0
+      margin-bottom: 0px
+      margin-left: 10px
+
+      li
+        list-style: none
+        display: inline-block
+        border: 1px solid
+        padding: 5px 18px
+        margin-right: 15px
+        border-radius: 5px
+
+      li:hover
+        background: darken($color-white,5%)
+        cursor: pointer
+
+  .confirm .post-inner-container
+    padding: 0
+    border: none
+    box-shadow: none
+
+    .post-info-list
+      padding: 0
+
+      .post-info-item
+        list-style: none
+
+        .title
+          color: $color-band3
+
+        .title:after
+          content: '：'
+
+        .desc
+          color: $color-band2
+          position: relative
+
+    .img
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12)
+
+  .confirm .post-footer .btn-list.style-1 > div
+    border-right: 1px solid #e3dad4
+
+
+
+  .post-footer
+    border-top: #e3dad3 solid 1px
+    border-bottom: #e3dad3 solid 1px
+
+    .btn-list.style-1 > div:hover
+      text-decoration: underline
+      background: none
+      cursor: pointer
+
+    .btn-list.style-1 > div
+      height: 45px
+      line-height: 45px
+      font-weight: 700
+
+      i
+        margin-right: 0.2em
+        color: $color-band2
+        font-size: 26px
+        position: relative
+        top: 6px
+
+  .post-reply-more:hover .block-text
+    text-decoration: underline
+    -webkit-text-decoration-color: darken($color-band1, 20%)
+    text-decoration-color: darken($color-band1,20%)
+    color: darken($color-band1,20%)
+    cursor: pointer
+
+  .post-reply-more:hover
+    cursor: pointer
+    background: darken($color-white,5%)
+
+  .post-reply-more
+    padding: 0px 21px
+    height: 50px
+    font-size: 16px
+
+    .block-text
+      font-size: 14px
+      margin: auto
+      color: $color-band1
+
+      i
+        font-size: 12px
+
+  .post-reply
+
+    .reply-list
+      padding-left: 0
+      margin-bottom: 0
+
+      .author-avater
+        height: 42px
+        width: 42px
+
+      li
+        //border-top: #f1f1f1 solid 1px
+        padding: 10px 15px
+        list-style: none
+
+        .author-box
+          width: 80%
+          width: calc(100% - 105px)
+
+          .author-meta
+            font-size: 12px
+            color: $color-gray
+
+          .author-msg
+            margin-bottom: 3px
+
+            .name
+              font-size: 16px
+
+            .msg
+              font-size: 15px
+              color: $color-band3
+
+  .post-reply-send
+    //border-top: #f1f1f1 solid 1px
+    padding: 10px 15px
+
+    .author-avater
+      height: 42px
+      width: 42px
+
+    .message-box
+      width: 88%
+      width: calc(100% - 65px)
+      height: 30px
+
+      .message-text
+        width: 73%
+        width: calc(100% - 105px)
+        margin-right: 17px
+        height: 30px
+        margin-bottom: 0
+        background: white
+
+      .btn.style-2
+        margin-right: 0
+
+.window-alert
+  top: 70px
+  width: 380px
+  margin-left: -150px
+
+  .alert-img
+    height: 35px
+    width: 35px
+    margin-right: 15px
+    position: relative
+    overflow: hidden
+
+    img
+      border-radius: 100%
+      height: 100%
+      width: 100%
+
+  .alert-msg
+    width: 78%
+    width: calc(100% - 76px)
+
+    .tip
+      color: $color-band2
+
+    .msg
+      font-size: 14px
+      margin-bottom: 5px
+      line-height: 1.3em
+
+    .alert-meta
+      font-size: 12px
+      color: $color-gray
+
+    .alert-files:hover
+      background: darken(#efece7,5%)
+
+    .alert-files
+      background: #efece7
+      border-radius: 5px
+      margin-top: 15px
+      overflow: hidden
+
+      .type
+        width: 40px
+        height: 40px
+        background: $color-band3
+
+      .name
+        padding-left: 15px
+
+  .alert-set
+    position: absolute
+    top: 11px
+    right: 14px
+    font-size: 25px
+    color: #cab8a2
+    display: none
+
+    i
+      margin-left: 0.5em
+
+    i:hover
+      color: darken($color-band1, 20%)
+      cursor: pointer
+
+.window-loading
+  text-align: center
+  color: #9e836c
+  line-height: 40px
+  padding-top: 10px
+  margin-bottom: 10px
+
+.window
+  position: absolute
+  background: #fff
+  box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1), 0px 0px 1px 0px #fafafa inset
+  border: 1px solid #e3e3e3
+
+  .window-title
+    padding: 0.8em 7px 0.8em 17px
+    color: $color-band3
+    border-bottom: 1px solid #ededed
+    box-shadow: 0px -1px 0px 0px #f2f2f2 inset
+    font-weight: 500
+    font-size: 13px
+    cursor: default
+
+    .window-set
+      float: right
+      margin-left: 2em
+      font-size: 12px
+      color: $color-band2
+
+    .window-set:hover
+      color: darken($color-band2,20%)
+      text-decoration: underline
+      cursor: pointer
+
+  .window-info
+    padding: 20px 17px
+    position: relative
+    border-bottom: 1px solid #ededed
+    box-shadow: 0px -1px 0px 0px #f2f2f2 inset
+
+  .window-info:hover .alert-set
+    display: block
+    cursor: pointer
+
+  .window-info.active
+    background: rgba($color-band1,0.1)
+
+  .window-info:hover
+    background: darken($color-white,5%)
+    cursor: pointer
+
+  .window-info.active:hover
+    background: darken(rgba($color-band1,0.1),10%)
+
+
+.window.noarrow:before,.window.noarrow:after
+  display: none
+
+.window:before
+  top: -10px
+  position: absolute
+  border: 5px solid #fff
+  content: ""
+  border-top: 5px solid transparent
+  border-left: 5px solid transparent
+  border-right: 5px solid transparent
+  left: 50%
+  margin-left: -10px
+  z-index: 2
+
+.window:after
+  top: -14px
+  position: absolute
+  border: 7px solid #e3e3e3
+  content: ""
+  border-top: 7px solid transparent
+  border-left: 7px solid transparent
+  border-right: 7px solid transparent
+  left: 50%
+  z-index: 0
+  margin-left: -12px
+
+.window-more
+  text-align: center
+  line-height: 50px
+  color: $color-band1
+  border-top: 1px solid #f1f1f1
+
+.window-more:hover
+  text-decoration: underline
+  color: darken($color-band1,20%)
+  cursor: pointer
+
+.window-container
+  max-height: 500px
+  overflow-y: scroll
+
+  > ul
+    padding-left: 0
+    margin-bottom: 0
+
+    > li
+      list-style: none
+
+.login
+  background: white
+  border-radius: 4px
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.06)
+  width: 770px
+  margin: 80px auto
+
+  .step-controller
+    text-align: center
+
+    .step
+      position: relative
+
+    .step:first-child:before
+      display: none
+
+    .step.active:before
+      background: $color-band2
+
+
+    .step.active
+
+      .circle
+        box-shadow: 0px 2px 10px 0px rgba(158, 131, 108, 0.4)
+        background: $color-band2
+        border-color: $color-band2
+        color: white
+
+      .text
+        color: $color-band2
+
+    .circle
+      width: 50px
+      height: 50px
+      line-height: 46px
+      margin: auto
+      border-radius: 100%
+      font-size: 25px
+      font-weight: 100
+      border: 2px solid #eceff3
+      color: $color-gray
+      margin-bottom: 10px
+
+    .step:before
+      content: ""
+      width: 50%
+      height: 2px
+      background: #eceff3
+      position: absolute
+      top: 23px
+      left: -25%
+
+    .text
+      font-size: 16px
+      letter-spacing: 0.1em
+      color: #9da0a4
+
+  .remember
+    height: 16px
+    width: 20px
+    margin-top: 0px
+
+
+  .remember:checked:after,.remember:after
+    font-family: FontAwesome
+    background: white
+    width: 20px
+    display: block
+    color: $color-band3
+
+  .remember:checked:after
+    content: "\f14a"
+    font-size: 17px
+
+  .remember:after
+    content: "\f096"
+    font-size: 20px
+
+  .remember + label:hover, .remember:hover
+    cursor: pointer
+
+  & > div
+    padding: 40px 30px 35px
+
+    .step-register
+
+      .btn-general,.btn-enterprise
+        border: 2px solid #eceff3
+        padding: 20px
+        border-radius: 5px
+        text-align: center
+        color: $color-band3
+
+        &:hover
+          background: #9e826b
+          border: 2px solid #9e826b
+          color: white
+          cursor: pointer
+          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.08)
+
+
+          .icon i
+            background: white
+            color: $color-band2
+
+        .icon
+          font-size: 48px
+          margin-top: 0px
+          margin-bottom: 10px
+
+          i
+            width: 60px
+            height: 60px
+            background: $color-band3
+            color: white
+            border-radius: 100%
+            line-height: 60px
+
+        .info
+          padding: 10px
+          border: 1px solid #eceff3
+          line-height: 1.8em
+          font-size: 13px
+          letter-spacing: 0.05em
+
+  .login-header
+    border-bottom: 2px solid #eceff3
+
+  .login-tab-group
+    width: 100%
+    height: 55px
+    border-radius: 5px
+    background: $color-white
+    border: 1px solid #eceff3
+    overflow: hidden
+    font-size: 14px
+    letter-spacing: 0.1em
+    text-indent: 0.1em
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.06)
+
+    & > div
+      text-align: center
+      line-height: 55px
+      cursor: pointer
+      background: #fbfbfb
+
+    & > div.active
+      background: #9e836c
+      color: white
+
+.certification-introduction
+  letter-spacing: 0.1em
+
+.certification-description
+  font-size: 16px
+  letter-spacing: 0.1em
+  line-height: 1.8em
+  color: $color-band2
+
+.block-confirm-add:hover
+  background: darken($color-white,5%)
+  cursor: pointer
+
+.block-confirm-add
+  border-top: #ebebeb solid 1px
+  color: #9e836c
+  padding: 20px 15px
+  height: 65px
+
+  i
+    margin-right: 10px
+    font-size: 23px
+    font-weight: 700
+
+.block-confirm-tag
+  padding-top: 15px
+  border-top: #ebebeb solid 1px
+  margin-bottom: -15px
+
+.block-confirm-team-name
+  border-top: #ebebeb solid 1px
+  padding-top: 15px
+
+.block-confirm-table
+  padding: 15px 0
+  border-top: #ebebeb solid 1px
+  margin-top: 5px
+
+  table
+    width: 100%
+
+    thead th
+      font-size: 13px
+      padding: 5px 15px
+      color: #4f4047
+      font-weight: 400
+      letter-spacing: 0.05em
+
+    tbody
+      td:nth-child(1),td:nth-child(2)
+        padding-left: 30px
+
+      td
+        padding: 10px 15px
+        color: $color-band2
+        font-size: 14px
+
+        i
+          font-size: 20px
+          color: $color-gray
+
+.principal-list
+  padding-left:  0
+  margin-bottom: 0
+
+  li
+    list-style: none
+    display:  inline-block
+
+  li .user-avater
+    width: 25px
+    height: 25px
+    margin-right: 2px
+
+  li .user-avater.none
+    padding: 0px 10px
+    background: #EDEDED
+    border-radius: 50px
+    width: auto
+    height: 19px
+    margin-left: 2px
+    line-height: 18px
+    font-size: 13px
+    color: #4F4046
+
+#block-add-post
+  pointer-events: auto
+
+
+body.open-confirm-add
+  .block-confirm-add-light-box
+    opacity: 1
+    pointer-events: auto
+    +transform(translate(-50%,-50%))
+    transition: transform 0.3s, opacity 0.3s
+
+  #block-add-post
+    pointer-events: none
+
+
+
+
+.block-confirm-add-light-box
+  position: fixed
+  background: $color-white
+  left: 50%
+  top: 50%
+  +transform(translate(-50%,-40%))
+  width: 570px
+  z-index: 999
+  opacity: 0
+  pointer-events: none
+  box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.1), 0px 0px 500px 0px rgba(0, 0, 0, 0.3)
+  transition: transform 0.3s, opacity 0.3s
+
+  .block-set
+    color: $color-gray
+    font-size: 20px
+
+  .block-edit
+    min-height: 520px
+    max-height: 65vh
+    overflow: scroll
+
+.block-confirm-add-file
+  margin-top: 20px
+
+  .title
+    line-height: 30px
+    color: $color-band3
+
+  .file-btn:hover
+    border: 1px solid #DCDDD9
+    cursor: pointer
+
+    .p-icon
+      color: $color-band3
+
+  .file-btn:active,.file-btn:focus
+    outline: none
+
+  .file-btn:active
+    box-shadow: 1px 1px 2px 0px #c9cbc5 inset
+
+
+  .file-btn
+    display: inline-block
+    float: right
+    border: 1px solid transparent
+    border-radius: 5px
+    width: 30px
+    height: 30px
+    margin-left: 15px
+    text-align: center
+    line-height: 27px
+    padding: 0
+
+    .p-icon
+      line-height: 29px
+      font-size: 24px
+      color: #bcbeb6
+
+.block-filter-select
+  box-shadow: 0 5px 8px rgba(73,59,65,.1)
+  position:  absolute
+  top: 50px
+  right:  0
+  z-index: 1
+  background: white
+  border: 1px solid #ebebeb
+  color: $color-band3
+
+  & > div
+    padding: 15px
+    border-top: 1px solid #ebebeb
+    padding-left: 40px
+    width: 170px
+
+    &:hover
+      background: #ece7e3
+      cursor: pointer
+
+  & > div.active
+    background: #f6f4f2
+
+    &:after
+      content: "\f00c"
+      font-family: FontAwesome
+      position: absolute
+      left: 10px
+      color: $color-band3
+
+    &:hover
+      background: #ece7e3
+      cursor: pointer
+
+.post-permissions-select
+  position: absolute
+  bottom: 30px
+  right: 15px
+  background: white
+  box-shadow: 0 5px 8px rgba(73,59,65,.1)
+  border: 1px solid #ebebeb
+  width: 300px
+
+  .title
+    height: auto
+    padding: 5px 15px
+    font-size: 13px
+    color: $color-band3
+
+.post-permissions-btn
+  position: relative
+
+.post-permissions-select
+  height: auto !important
+
+  .title,.option,& div
+    height: auto !important
+
+  .option
+    padding: 15px
+    border-top: 1px solid #ebebeb
+    position: relative
+
+    .title
+      font-size: 13px
+
+    .option-text
+      font-size: 12px
+      color: $color-gray
+      letter-spacing: 0.1em
+      font-weight: 100
+
+    .option-title
+      color: $color-band3
+      letter-spacing: 0.1em
+
+    .option-icon
+      font-size: 30px
+      padding-left: 15px
+      padding-right: 15px
+      color: $color-gray
+
+    &:hover
+      background: #ece7e3
+      cursor: pointer
+
+      .option-icon
+        color: $color-band3
+
+    &.active
+      &:after
+        content: "\f00c"
+        font-family: FontAwesome
+        position: absolute
+        left: 10px
+        color: $color-band3
+
+      .option-icon
+        color: $color-band3
+
+
+.identities-box
+
+
+
+
+  .card:hover
+    box-shadow: 0.5px 0.866px 5px 0px rgba(4, 0, 0, 0.2)
+    cursor: pointer
+
+    &:after
+      content: "\e826"
+      font-family: planXcape
+      position: absolute
+      right: 35px
+      top: 50%
+      margin-top: -14px
+      font-size: 12px
+
+  .card:active
+    box-shadow: 0.5px 0.866px 5px 0px rgba(4, 0, 0, 0.2) inset
+
+  .card
+    border-radius: 5px
+    padding: 25px
+    letter-spacing: 0.05em
+
+    .user-avater
+      height: 70px
+      width: 70px
+      box-shadow: 0px 0px 0px 40px rgba($color-band2,0.01)
+
+    .user-name
+      font-size: 16px
+      color:  $color-band2
+
+    .user-title
+      font-size:  12px
+      margin-bottom:  5px
+      line-height: 1.1em
+
+    .user-Permissions
+      font-size: 16px
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-fileupload/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-fileupload/jquery.fileupload.js"></script>
+
+    <style>
+        .bar {
+            height: 18px;
+            background: green;
+        }
+    </style>
+
+</head>
+<body>
+<div class="fileupload-buttonbar">
+    <span class="fileinput-button"><input type="file" name="files[]" multiple></span>
+    <button type="submit" class="start">Start upload</button>
+    <button type="reset" class="cancel">Cancel upload</button>
+    <button type="button" class="delete">Delete</button>
+    <input type="checkbox" class="toggle">
+</div>
+
+<div class="fileupload-progress">
+    <div class="progress">
+        <div class="bar" style="width:0%;"></div>
+    </div>
+    <div class="progress-extended"></div>
+</div>
+
+<div class="files">
+    <script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+<div class="template-upload">
+{% if (file.error) { %}
+<div class="error">{%=file.error%}</div>
+{% } else { %}
+<div class="preview"><span class="fade"></span></div>
+<div class="name"><span>{%=file.name%}</span></div>
+<div class="size"><span>{%=o.formatFileSize(file.size)%}</span></div>
+<div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" style="height:5px;"><div class="bar" style="width:0%;"></div></div>
+<span class="start">
+{% if (!o.options.autoUpload) { %}
+<button>Start Upload</button>
+{% } %}
+</span>
+{% } %}
+<span class="cancel"><button>Cancel</button></span>
+</div>
+{% } %}
+</script>
+</div>
+
+
+
+<script>
+    $(function () {
+        $('#fileupload').fileupload({
+            dataType: 'json',
+// 上传完成后的执行逻辑
+            done: function (e, data) {
+                $.each(data.result, function (index, file) {
+                    $('<p/>').text(file.name + ' uploaded').appendTo($("body"));
+                });
+            },
+// 上传过程中的回调函数
+            progressall: function (e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                console.log(progress + '%');
+            }
+        });
+    })
+</script>
+</body>
+</html>

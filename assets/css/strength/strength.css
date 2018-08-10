@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.strength_meter div{
+	text-align: left;
+	color: black;
+	white-space: nowrap;
+	color: rgba(157, 160, 164, 0.5);
+	left: 80px;
+	position: relative;
+	bottom: -3px;
+	color: #9da0a4;
+	font-weight: 400;
+}
+
+/*無*/
+.strength_meter > div:after {
+	position: absolute;
+	left: -80px;
+	top: 9px;
+	content: "";
+	height: 4px;
+	width: 70px;
+	background: rgba(157, 160, 164, 0.5);
+}
+
+/*非常弱*/
+.strength_meter > div.veryweak{
+	color: rgb(157, 160, 164);
+}
+.strength_meter > div.veryweak:after{
+	background: #df5151;
+}
+
+/*弱*/
+.strength_meter > div.weak{
+	color: rgb(157, 160, 164);
+}
+.strength_meter > div.weak:after{
+	background: #df5151;
+}
+
+/*中*/
+.strength_meter > div.medium:after {
+	box-shadow: -80px 0px #C8BE3F;
+}
+.strength_meter > div.medium{
+	color: rgb(157, 160, 164);
+	left: 160px;
+}
+.strength_meter > div.medium:after{
+	background: #C8BE3F;
+}
+
+/*強*/
+.strength_meter > div.strong:after {
+	box-shadow: -80px 0px #8bc84b;
+}
+.strength_meter > div.strong{
+	color: rgb(157, 160, 164);
+	left: 240px;
+}
+.strength_meter > div.strong:after{
+	background: #8bc84b;
+}
+
+.strength_meter > div.strong:before {
+	position: absolute;
+	left: -240px;
+	top: 9px;
+	content: "";
+	height: 5px;
+	width: 70px;
+	background: #8bc84b;
+}
+
+

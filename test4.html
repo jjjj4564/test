@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+
+<script>
+$(function () {
+
+    var cc = Date.parse("2018年01月09日 (週二)");
+
+    var dd = new Date("2018年01月09日");
+
+    alert(dd)
+
+    var aa = [];
+
+    //aa["load_more_seen"] = [];
+    //aa["load_more_seen2"] = '222222';
+
+    var temp = new Object();
+    temp["id"] = "po-0167";
+    temp["date"] = new Date(1980, 2, 24);
+    temp["quantity"] = 1;
+    temp["amount"] = 4;
+    temp["title"] = "A Book About Nothing";
+
+    var tempp = new Object();
+    tempp["id"] = "22-22";
+    tempp["date"] = new Date(1980, 2, 24);
+    tempp["quantity"] = 1;
+    tempp["amount"] = 4;
+    tempp["title"] = "A Book About Nothing";
+
+
+    if(! aa["load_more_seen"]){
+        aa["load_more_seen"] = []
+    }
+
+    aa["load_more_seen"].push(temp);
+
+    aa["load_more_seen"].push(tempp);
+
+    aa["load_more_seen"].push(temp);
+
+    aa["load_more_seen"].splice(0, 1);
+    aa["load_more_seen"].splice(0, 1);
+
+    console.log(aa)
+
+
+
+})
+    
+</script>
+
+</body>
+</html>

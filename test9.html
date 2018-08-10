@@ -1,0 +1,1001 @@
+
+<div id="side-left" class="side-left col-xs-3">
+    <div id="fix-left" class="fix-left">
+        <div id="block-menu" class="block-menu block">
+            <div class="block-title">
+                <div class="title-icon">
+                    <svg class="menu-icon" viewBox="0 0 30 30">
+                        <defs>
+                            <linearGradient id="gradient_fill" x1="100%" y1="0%" x2="0%" y2="100%">
+                                <stop stop-color="#cab8a2" offset="0%"></stop>
+                                <stop stop-color="#9e836c" offset="50%"></stop>
+                                <stop stop-color="#5f4e57" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <text x="0px" y="24px" font-size="24" fill="url(#gradient_fill)">&#xe807;</text>
+                    </svg>
+                </div>
+                <div>動態時報</div>
+                <div class="block-set block-icon-right menu ">
+                    <i class="p-icon p-more"></i>
+                </div>
+            </div>
+        </div>
+        <div id="block-important" class="block-important block">
+            <div class="block-title">
+                <div>重要專案</div>
+                <div class="block-set block-icon-right">
+                    <i class="p-icon p-more"></i>
+                </div>
+            </div>
+            <div class="block-container" data-min="7">
+                <ul class="block-important-list hide">
+                    <li class="block-important-item" v-for="item in items">
+                        <a href="#" :title="item.text">
+                            <div class="block-info">
+                                <div class="block-text" v-text="item.text"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="block-loading block-important-loader">
+                    <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="block-footer">
+                <div class="block-more hide">
+                    <div class="block-text">看更多專案 <i class="p-icon p-plus"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="block-contact" class="block-contact block">
+            <div class="block-title">
+                <div>聯絡人</div>
+                <div class="block-set block-icon-right">
+                    <i class="p-icon p-more"></i>
+                </div>
+            </div>
+            <div class="block-container">
+                <ul class="block-contact-list hide">
+                    <li class="block-contact-item" v-for="item in items">
+                        <a href="#" :title="item.name + ': ' + item.title">
+                            <div class="block-info">
+                                <div class="user-avatar">
+                                    <img :src="item.avatar_url">
+                                </div>
+                                <div class="user-contact">
+                                    <div class="user-name" v-text="item.name"></div>
+                                    <div class="user-title" v-text="item.title"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="block-loading block-contact-loader">
+                    <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="block-footer">
+                <div class="block-more hide">
+                    <div class="block-text">看更多聯絡人 <i class="p-icon p-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="side-right" class="side-right col-xs-9">
+    <div class="row">
+        <div class="col-xs-8">
+            <div id="block-add-post" class="block-add-post block">
+                <div class="top-line"></div>
+                <div class="message">
+                    <div class="user-avatar">
+                        <img src="http://graph.facebook.com/100003932160896/picture">
+                    </div>
+                    <div class="input-text">
+                        <div class="textarea_highlights"></div>
+                        <textarea class="textarea" placeholder="您要做些什麼呢..." onfocus="this.placeholder=''" onblur="this.placeholder='您要做些什麼呢...'"></textarea>
+                    </div>
+                </div>
+                <div class="bottom-btn clearfix">
+                    <div class="btn-list tab-controller style-1">
+                        <div data-tab="meeting" class="btn-item active">會議</div>
+                        <div data-tab="confirm" class="btn-item">工作事項</div>
+                        <div data-tab="milestone" class="btn-item">里程碑</div>
+                    </div>
+                </div>
+                <div class="block-edit">
+                    <div class="block-edit-meeting tab-content meeting">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4">
+                                    <input class="meeting-name" name="name" type="text">
+                                    <div class="placeholder">會議名稱</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="meeting-project" name="project" type="text">
+                                    <span class="input-icon"><i class="p-icon p-project"></i></span>
+
+                                    <div class="placeholder">選擇專案</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="meeting-date" name="date" type="text">
+                                    <span class="input-icon"><i class="fa fa-calendar"></i></span>
+                                    <div class="placeholder">會議日期</div>
+                                </label>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="meeting-time" name="time" type="text">
+                                    <span class="input-icon"><i class="fa fa-clock-o"></i></span>
+                                    <div class="placeholder">會議時間</div>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="meeting-location" name="location" type="text">
+                                    <span class="input-icon"><i class="fa fa-location-arrow"></i></span>
+                                    <div class="placeholder">會議地點</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4">
+                                    <input class="meeting-address" name="address"  type="text">
+                                    <div class="placeholder">會議地址</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="vue-meeting-meeter" class="row">
+                            <div class="col-xs-12">
+                                <ul class="meeting-meeter-list tags-box clearfix">
+                                    <li class="tags" v-for="(item, $index) in items" v-if="item.is_select"><span v-text="item.name"></span><i class="p-icon p-close" @click="close($index)"></i></li>
+                                    <li class="new-tag">
+                                        <input class="meeting-meeter tags-input" name="meeting-meeter" type="text" placeholder="新增會議成員" v-model="searchQuery">
+                                        <div class="meeting-meeter-tip">
+                                            <div class="title" v-if="searchQuery!=''">
+                                                <div v-if="filter_items.length!=0">跟「<span v-text="searchQuery"></span>」有關的聯絡人</div>
+                                                <div v-else="">「<span v-text="searchQuery"></span>」是誰阿????????</div>
+                                            </div>
+                                            <div class="querylist">
+                                                <ul class="meeter-tip-list">
+                                                    <!--<li v-for="item in orderby_filter_items">aa</li>-->
+                                                    <li v-if="no_select_item.length==0">已全部選取</li>
+                                                    <li class="meeter-tip-item" v-for="(item, $index) in filter_items" :data-id="item.id" @click="click($index)" @mouseover="mouseover($index)" :class="firstClass($index)">
+                                                        <img class="avatar" :src="item.avatar_url">
+                                                        <span class="name" v-text="item.name"></span>
+                                                        <span class="select-icon" v-if="item.is_select"><i class="p-icon p-ok"></i></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="title">會議成員</div>
+                                <!--<label class="input style-4">
+                                    <input class="meeting-meeter" name="meeting-meeter" type="text" placeholder="會議成員">
+                                </label>-->
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4">
+                                    <textarea class="meeting-matter" name="meeting-matter"></textarea>
+                                    <div class="placeholder">討論事項</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="block-confirm-tag row">
+                            <div class="col-xs-12">
+                                <ul class="meeting-tag-list tags-box clearfix">
+                                    <li class="new-tag">
+                                        <input name="meeting-tag tags-input" type="text" placeholder="新增標籤" class="meeting-tag">
+                                    </li>
+                                </ul>
+                                <div class="title">標籤</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-edit-confirm tab-content confirm hide">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="confirm-project" name="confirm-project" type="text">
+                                    <span class="input-icon"><i class="p-icon p-project"></i></span>
+                                    <div class="placeholder">選擇專案</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="confirm-project" name="confirm-project" type="text">
+                                    <span class="input-icon"><i class="p-icon p-milestone"></i></span>
+                                    <div class="placeholder">選擇里程碑</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="col-xs-12">
+                                <label class="input style-4 icon-arrow-down">
+                                    <select>
+                                        <option disabled="" selected="" hidden="" value="-1"></option>
+                                        <option value="1">確認事項</option>
+                                        <option value="2">代辦事項</option>
+                                    </select>
+                                    <div class="placeholder">事項類型</div>
+                                </label>
+                            </div>
+                        </div>
+                        <!--<div class="row ">
+                            <div class="col-xs-6">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="confirm-date" name="confirm-date" type="text">
+                                    <span class="input-icon"><i class="fa fa-calendar"></i></span>
+                                    <div class="placeholder">日期</div>
+                                </label>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="confirm-time" name="confirm-time" type="text">
+                                    <span class="input-icon"><i class="fa fa-clock-o"></i></span>
+                                    <div class="placeholder">時間</div>
+                                </label>
+                            </div>
+                        </div>-->
+                        <div class="block-confirm-team-name row">
+                            <div class="col-xs-12">
+                                <label class="input style-4">
+                                    <input class="confirm-project" name="confirm-project" type="text">
+                                    <div class="placeholder">團體工作事項名稱</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="block-confirm-table row">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th width="48%">工作事項</th>
+                                    <th width="38%">負責人</th>
+                                    <th></th>
+                                    <th></i></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="title">mastercard app設計三款</td>
+                                    <td>
+                                        <ul class="principal-list">
+                                            <li class="principal-item"><div class="user-avatar"><img src="http://graph.facebook.com/1152007985/picture"></div></li>
+                                            <li class="principal-item"><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                            <li class="principal-item"><div class="user-avatar"><img src="http://graph.facebook.com/100003932160896/picture"></div></li>
+                                            <li class="principal-item"><div class="user-avatar none">3+</div></li>
+                                        </ul>
+                                    </td>
+                                    <td><i class="p-icon p-edit"></i></td> <td><i class="p-icon p-delete"></td>
+                                </tr>
+                                <tr>
+                                    <td class="title">mastercard web設計三款</td>
+                                    <td>
+                                        <ul class="principal-list">
+                                            <li class="principal-item"><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                            <li class="principal-item"><div class="user-avatar"><img src="http://graph.facebook.com/100003932160896/picture"></div></li>
+                                        </ul>
+                                    </td>
+                                    <td><i class="p-icon p-edit"></i></td> <td><i class="p-icon p-delete"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="block-confirm-add row" onclick="confirm_add('open')">
+                            <i class="p-icon p-circle-add-o"></i>新增工作事項
+                        </div>
+                        <div class="block-confirm-tag row">
+                            <div class="col-xs-12">
+                                <ul class="confirm-tag-list tags-box clearfix">
+                                    <li class="new-tag">
+                                        <input name="confirm-tag tags-input" type="text" placeholder="新增標籤" class="confirm-tag">
+                                    </li>
+                                </ul>
+                                <div class="title">標籤</div>
+                            </div>
+                        </div>
+
+
+                        <div class="block-confirm-add-light-box">
+                            <div class="block-title"><div>新增工作事項</div> <div class="block-set block-icon-right" onclick="confirm_add('close')"><i class="p-icon p-close"></i></div></div>
+                            <div class="block-edit">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label class="input style-4"><input name="confirm-add-name" type="text" class="confirm-add-name"> <div class="placeholder">事項標題</div></label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul class="confirm-principal-list tags-box clearfix">
+                                            <li class="new-tag"><input name="confirm-principal" type="text" placeholder="新增負責人" class="confirm-principal tags-input">
+                                                <div class="confirm-principal-tip">
+                                                    <ul class="principal-tip-list"></ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="title">負責人</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <label class="input style-4 input-group clearfix">
+                                            <input class="confirm-add-date" name="confirm-add-date" type="text">
+                                            <span class="input-icon"><i class="fa fa-calendar"></i></span>
+                                            <div class="placeholder">日期</div>
+                                        </label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label class="input style-4 input-group clearfix">
+                                            <input class="confirm-add-time" name="confirm-add-time" type="text">
+                                            <span class="input-icon"><i class="fa fa-clock-o"></i></span>
+                                            <div class="placeholder">時間</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <label class="input style-4">
+                                            <textarea class="meeting-matter" name="meeting-matter"></textarea>
+                                            <div class="placeholder">描述</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="block-confirm-add-file row"><div class="col-xs-12"><span class="title">附件檔案</span>
+                                    <button class="file-btn"><i class="p-icon p-file"></i></button>
+                                    <button class="file-btn"><i class="p-icon p-annex"></i></button>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="bottom-sub clearfix">
+                                <div class="message-submit">
+                                    <div class="flex-align-center">
+                                        <button onclick="confirm_add('close')" class="btn style-2 o">取消</button>
+                                        <button onclick="confirm_add('complete')" class="btn style-2">新增完成</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="block-edit-milestone tab-content milestone hide">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="milestone-start-date" name="start_date" type="text">
+                                    <span class="input-icon"><i class="fa fa-calendar"></i></span>
+                                    <div class="placeholder">起始日期</div>
+                                </label>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="milestone-end-date" name="end_date" type="text">
+                                    <span class="input-icon"><i class="fa fa-calendar"></i></span>
+                                    <div class="placeholder">結束日期</div>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4">
+                                    <input class="milestone-name" name="name" type="text">
+                                    <div class="placeholder">里程碑名稱</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <label class="input style-4 input-group clearfix">
+                                    <input class="milestone-project" name="project" type="text">
+                                    <span class="input-icon"><i class="p-icon p-project"></i></span>
+                                    <div class="placeholder">選擇專案</div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-set clearfix">
+                    <div class="flex-align-center">
+                        <div class="col-xs-7">通知</div>
+                        <div class="col-xs-5">
+                            <input class="hide" name="notification" id="post-alert-toggle" onchange="cookie_toggle(this)" type="checkbox" value="1">
+                            <label class="toggle-btn pull-right" for="post-alert-toggle"></label>
+                        </div>
+                    </div>
+                    <div class="flex-align-center">
+                        <div class="col-xs-7">同步寄出電子郵件</div>
+                        <div class="col-xs-5">
+                            <input class="hide" name="send_mail" id="post-email-toggle" onchange="cookie_toggle(this)" checked type="checkbox" value="1">
+                            <label class="toggle-btn active pull-right" for="post-email-toggle"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-sub clearfix">
+                    <div class="message-submit">
+                        <div class="flex-align-center">
+                                        <span id="post-permissions-btn" class="post-permissions-btn open-post-permissions-select">
+                                            <button class="btn style-3"><i class="p-icon p-public"></i>全專案成員</button>
+                                            <div id="post-permissions-select" class="post-permissions-select hide">
+                                                <div class="title">誰可以看到這則工作事項?</div>
+                                                <!--<div class="option">
+                                                    <div class="option-icon"><i class="p-icon p-public"></i></div>
+                                                    <div class="option-info">
+                                                        <div class="option-title">公開</div>
+                                                        <div class="option-text">測試文字測試文字測試文字測試文字</div>
+                                                    </div>
+                                                </div>-->
+                                                <div class="option active">
+                                                    <div class="option-icon"><i class="p-icon p-public"></i></div>
+                                                    <div class="option-info">
+                                                        <div class="option-title">全專案成員</div>
+                                                        <div class="option-text">測試文字測試文字測試文字測試文字</div>
+                                                    </div>
+                                                </div>
+                                                       <div class="option">
+                                                    <div class="option-icon"><i class="p-icon p-exclude_guest"></i></div>
+                                                    <div class="option-info">
+                                                        <div class="option-title">內部成員</div>
+                                                        <div class="option-text">測試文字測試文字測試文字測試文字</div>
+                                                    </div>
+                                                </div>
+                                                       <div class="option">
+                                                    <div class="option-icon"><i class="p-icon p-specific"></i></div>
+                                                    <div class="option-info">
+                                                        <div class="option-title">指定成員</div>
+                                                        <div class="option-text">測試文字測試文字測試文字測試文字</div>
+                                                    </div>
+                                                </div>
+                                                       <div class="option">
+                                                    <div class="option-icon"><i class="p-icon p-except"></i></div>
+                                                    <div class="option-info">
+                                                        <div class="option-title">排除成員</div>
+                                                        <div class="option-text">測試文字測試文字測試文字測試文字</div>
+                                                    </div>
+                                                </div>
+                                                       <div class="option">
+                                                    <div class="option-icon"><i class="p-icon p-onlyme"></i></div>
+                                                    <div class="option-info">
+                                                        <div class="option-title">僅限自己</div>
+                                                        <div class="option-text">測試文字測試文字測試文字測試文字</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                            <input tabindex="-1" type="hidden" id="csrf_token" name="__csrf_token" value="<?php echo $this->csrf_value;?>">
+                            <button class="btn style-2" onclick="postSubmit()">送出</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="block-filter" class="block-filter block open-block-filter-select">
+                <div class="block-info">
+                    <div class="block-text">篩選方式：<span class="text-band2">所有動態</span></div>
+                    <div class="block-set block-icon-right">
+                        <i class="p-icon p-angle-down"></i>
+                    </div>
+                </div>
+                <div id="block-filter-select" class="block-filter-select hide">
+                    <div class="active">所有動態</div>
+                    <div>會議</div>
+                    <div>工作事項</div>
+                    <div>里程碑</div>
+                </div>
+            </div>
+            <div id="block-post" class="block-post">
+                <div v-for="(item, $index) of items" class="post-item block" :class="type_Class($index)">
+                    <div class="post-header">
+                        <div class="flex-align-start">
+                            <div class="author-avatar">
+                                <img :src="item.created_avatar">
+                            </div>
+                            <div class="author-box">
+                                <div class="author-msg" v-html="fullmsg($index)"><!--<a href="#" class="name">Sarah Hsiao</a> <span class="msg">創建了一個新的會議 <a href="#">planXcape 前端內部會議</a></span>--></div>
+                                <div class="author-meta"><span :title="item.created" v-text="meta($index)"></span><span class="post-permission " :title="item.access"><i class="p-icon" :class="permissions($index)"></i></span></div>
+                            </div>
+                            <div class="block-set block-icon-right">
+                                <i class="p-icon p-more"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-intro" v-html="item.introtext"></div>
+                        <div class="post-inner" v-if="item.type == 'meeting'">
+
+                            <!--會議-->
+                            <div class="post-inner-container">
+                                <div  class="post-title" v-text="item.title"></div>
+                                <ul class="post-info-list">
+                                    <li class="post-info-item"><span class="title">專案</span><span class="desc" v-text="item.project_name"></span></li>
+                                    <li class="post-info-item"><span class="title">時間</span><span class="desc" v-text="item.date">2017年01月15日 下午3點</span></li>
+                                    <li class="post-info-item"><span class="title">地點</span><span class="desc" v-text="item.location">Daydream Lab Office</span></li>
+                                    <li class="post-info-item">
+                                        <span class="title">地址</span><span class="desc"><span v-text="item.address"></span>
+                                                            <a :href="map($index)" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="開啟google map" title="開啟googlemap" class="post-map"><i class="p-icon p-position"></i></a>
+                                                      </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="post-inner-container" v-if="item.load_more_seen">
+                                <div class="post-inner-title">參與人員</div>
+                                <ul class="post-meeter-list">
+                                    <li v-for="(item2, $index2) of item.attendees" v-if="$index2 < 3" class="post-meeter-item"><div class="user-avatar"><img :title="item2.name" :src="item2.avatar_url"></div></li>
+                                    <li class="post-meeter-item" v-if="item.attendees.length > 3"><div class="user-avatar none" :title="meeter_more_title($index)">+<span v-text="item.attendees.length-3"></span></div></li>
+                                </ul>
+                            </div>
+
+                            <div class="post-inner-container" v-if="item.load_more_seen">
+                                <div class="post-inner-title">討論事項</div>
+                                <div v-html="item.agenda"></div>
+                            </div>
+
+                            <div class="post-inner-container" v-if="item.load_more_seen">
+                                <div class="post-inner-title">標籤</div>
+                                <ul class="post-tag-list">
+                                    <li v-for="(item2, $index2) of item.tag" v-text="item2.name">設計</li>
+                                </ul>
+                            </div>
+                            <div class="post-inner-load-more open" @click="load_more($index)" v-if="item.load_more_seen">隱藏</div>
+                            <div class="post-inner-load-more" @click="load_more($index)" v-else="item.load_more_seen">看更多</div>
+
+                            <!--會議 END-->
+                        </div>
+                        <div class="post-inner" v-if="item.type == 'confirm'">
+                            <!--確認事項-->
+
+                            <div class="post-inner" v-if="item.subtasks.length==1&&item.subtasks[0].assignee.length==1">
+
+                                <div class="post-inner-container" >
+                                    <ul class="post-info-list">
+                                        <li class="post-info-item"><span class="title">專案</span><span class="desc" v-text="item.project_name"></span></li>
+                                        <li class="post-info-item"><span class="title">里程碑</span><span class="desc" v-text="item.milestone_name"></span></li>
+                                        <li class="post-info-item"><span class="title">確認事項</span><span class="desc" v-text="item.subtasks[0].title"></span></li>
+                                        <li class="post-info-item"><span class="title">時間</span><span class="desc" v-text="item.subtasks[0].end_date"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="post-inner-container">
+                                    <img class="img" src="<?php echo DOMAIN_NAME . BASEDIR ; ?>/assets/img/todo.png"/>
+                                </div>
+                            </div>
+
+                            <!--確認事項 END-->
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="post-footer clearfix">
+                        <div class="btn-list style-1">
+                            <div><i class="p-icon p-reply"></i><span>回覆</span></div>
+                            <div v-if="item.type == 'confirm'"><i class="p-icon p-circle-confirm"></i><span>確認</span></div>
+                        </div>
+                    </div>
+
+                    <div class="post-reply" v-if="item.load_post_reply_seen">
+
+                        <div class="post-reply-more" @click="load_more_reply($index)" v-if="item.reply.length > item.load_post_reply_num">
+                            <div class="block-text">載入更多回覆(<span v-text="item.reply.length-item.load_post_reply_num "></span>) ...</div>
+                        </div>
+
+                        <ul class="reply-list">
+                            <li class="reply-item" v-for="(item2, $index2) of item.reply" v-if="$index2 < item.load_post_reply_num">
+                                <div class="flex-align-start">
+                                    <div class="author-avatar">
+                                        <img :src="item2.created_avatar">
+                                    </div>
+                                    <div class="author-box">
+                                        <div class="author-msg"><a :href="item2.created_link" class="name" v-text="item2.created_by"></a> <span class="msg" v-text="item2.introtext"></span></div>
+                                        <div class="author-meta"><span :title="item2.created" v-text="reply_meta($index,$index2)"></span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="post-reply-send clearfix">
+                            <div class="author-avatar">
+                                <img src="http://graph.facebook.com/100003932160896/picture">
+                            </div>
+                            <div class="message-box">
+                                <label class="input style-3 message-text">
+                                    <input type="text" placeholder="輸入您的回覆...">
+                                </label>
+                                <div class="message-submit">
+                                    <div class="flex-align-center">
+                                        <button class="btn style-2">送出</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <!--<div class="post-item confirm block">
+                <div class="post-header">
+                    <div class="flex-align-start">
+                        <div class="author-avatar">
+                            <img src="http://graph.facebook.com/1152007985/picture">
+                        </div>
+                        <div class="author-box">
+                            <div class="author-msg"><a href="#" class="name">Paige Meng</a> <span class="msg">新增了一個確認事項 <a href="#">大發網站首頁初步設計提案</a></span></div>
+                            <div class="author-meta"><span title="2017年11月9日 12:20">43 分鐘前</span><span class="post-permission " title="公開"><i class="p-icon p-public"></i></span></div>
+                        </div>
+                        <div class="block-set block-icon-right">
+                            <i class="p-icon p-more"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-intro"><a href="#">Sarah</a> 再請你協助看看有沒有要調整的地方。</div>
+                    <div class="post-inner">
+                        <div class="post-inner-container">
+                            <ul class="post-info-list">
+                                <li class="post-info-item"><span class="title">專案</span><span class="desc">Daydream Lab “國泰銀行"</span></li>
+                                <li class="post-info-item"><span class="title">確認事項</span><span class="desc">mastercard首頁設計</span></li>
+                                <li class="post-info-item"><span class="title">確認時程</span><span class="desc">2017年01月15日 下午3點</span></li>
+                            </ul>
+                        </div>
+                        <div class="post-inner-container">
+                            <img class="img" src="<?php echo DOMAIN_NAME . BASEDIR ; ?>/assets/img/todo.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-footer clearfix">
+                    <div class="btn-list style-1">
+                        <div><i class="p-icon p-reply"></i>回覆</div>
+                        <div><i class="p-icon p-circle-confirm"></i>確認</div>
+                    </div>
+                </div>
+            </div>-->
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div id="fix-right" class="fix-right">
+                <div id="block-datepicker" class="block-datepicker block">
+                    <!--<img src="img/datapicker.png" style="width: 100%"/>-->
+                    <div id="datetimepicker12"></div>
+                    <div class="block-tab clearfix">
+                        <div class="col-xs-6 tab">今日會議</div>
+                        <div class="col-xs-6 tab active">今日工作事項</div>
+                    </div>
+                    <div class="block-container">
+                        <ul class="today-meeting-list">
+                            <li class="today-meeting-item">
+                                <div class="block-meeting open">
+                                    <div class="block-meeting-header">
+                                        <div class="block-meeting-time">9:00am </div>
+                                        <div class="block-meeting-title">
+                                            <a href="#" title="planXcape 前端內部會議">planXcape 前端內部會議</a>
+                                        </div>
+                                        <span class="block-container-toggle open"></span>
+                                    </div>
+                                    <div class="block-meeting-container">
+                                        <div class="block-inner-container">
+                                            <div class="flex-align-center">
+                                                <div class="author-avatar">
+                                                    <img src="http://graph.facebook.com/100003932160896/picture">
+                                                </div>
+                                                <div class="author-box">
+                                                    <div class="author-msg">Sarah Hsiao</div>
+                                                    <div class="author-meta"><span title="2017年11月9日 12:20">23 分鐘前</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-meeting-intro">相關議程，請參與的會議同仁準備各項資料與準時與會，感謝：）</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">會議地點</div>
+                                            <div class="block-inner-position">Daydream Lab Office</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">參與成員</div>
+                                            <div class="block-inner-meeter">
+                                                <ul class="block-meeter">
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100000256309643/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100002332557048/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/1152007985/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/1099615218/picture"></div></li>
+                                                    <li class="hide"><div class="user-avatar  none" title="Paige Meng&#10;Jackie Lin">+2</div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">討論事項</div>
+                                            <ol>
+                                                <li>Web/App首頁設計</li>
+                                                <li>時程規劃</li>
+                                                <li>人事安排</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="today-meeting-item">
+                                <div class="block-meeting">
+                                    <div class="block-meeting-header">
+                                        <div class="block-meeting-time">12:00am </div>
+                                        <div class="block-meeting-title">
+                                            <a href="#" title="Daydream Lab Web Case “Cheers”內部檢視會議1">Daydream Lab Web Case “Cheers”內部檢視會議１</a>
+                                        </div>
+                                        <span class="block-container-toggle"></span>
+                                    </div>
+                                    <div class="block-meeting-container">
+                                        <div class="block-inner-container">
+                                            <div class="flex-align-center">
+                                                <div class="author-avatar">
+                                                    <img src="http://graph.facebook.com/100003932160896/picture">
+                                                </div>
+                                                <div class="author-box">
+                                                    <div class="author-msg">Sarah Hsiao</div>
+                                                    <div class="author-meta"><span title="2017年11月9日 12:20">23 分鐘前</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-meeting-intro">相關議程，請參與的會議同仁準備各項資料與準時與會，感謝：）</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">會議地點</div>
+                                            <div class="block-inner-position">Daydream Lab Office</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">參與成員</div>
+                                            <div class="block-inner-meeter">
+                                                <ul class="block-meeter">
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100000256309643/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100002332557048/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">討論事項</div>
+                                            <ol>
+                                                <li>Web/App首頁設計</li>
+                                                <li>時程規劃</li>
+                                                <li>人事安排</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="today-meeting-item">
+                                <div class="block-meeting">
+                                    <div class="block-meeting-header">
+                                        <div class="block-meeting-time">14:00am </div>
+                                        <div class="block-meeting-title">
+                                            <a href="#" title="Daydream Lab Web Case “Cheers”內部檢視會議2">Daydream Lab Web Case “Cheers”內部檢視會議２</a>
+                                        </div>
+                                        <span class="block-container-toggle"></span>
+                                    </div>
+                                    <div class="block-meeting-container">
+                                        <div class="block-inner-container">
+                                            <div class="flex-align-center">
+                                                <div class="author-avatar">
+                                                    <img src="http://graph.facebook.com/100003932160896/picture">
+                                                </div>
+                                                <div class="author-box">
+                                                    <div class="author-msg">Sarah Hsiao</div>
+                                                    <div class="author-meta"><span title="2017年11月9日 12:20">23 分鐘前</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-meeting-intro">相關議程，請參與的會議同仁準備各項資料與準時與會，感謝：）</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">會議地點</div>
+                                            <div class="block-inner-position">Daydream Lab Office</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">參與成員</div>
+                                            <div class="block-inner-meeter">
+                                                <ul class="block-meeter">
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100000256309643/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100002332557048/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">討論事項</div>
+                                            <ol>
+                                                <li>Web/App首頁設計</li>
+                                                <li>時程規劃</li>
+                                                <li>人事安排</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="today-meeting-item">
+                                <div class="block-meeting">
+                                    <div class="block-meeting-header">
+                                        <div class="block-meeting-time">14:00am </div>
+                                        <div class="block-meeting-title">
+                                            <a href="#" title="Daydream Lab Web Case “Cheers”內部檢視會議2">Daydream Lab Web Case “Cheers”內部檢視會議２</a>
+                                        </div>
+                                        <span class="block-container-toggle"></span>
+                                    </div>
+                                    <div class="block-meeting-container">
+                                        <div class="block-inner-container">
+                                            <div class="flex-align-center">
+                                                <div class="author-avatar">
+                                                    <img src="http://graph.facebook.com/100003932160896/picture">
+                                                </div>
+                                                <div class="author-box">
+                                                    <div class="author-msg">Sarah Hsiao</div>
+                                                    <div class="author-meta"><span title="2017年11月9日 12:20">23 分鐘前</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-meeting-intro">相關議程，請參與的會議同仁準備各項資料與準時與會，感謝：）</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">會議地點</div>
+                                            <div class="block-inner-position">Daydream Lab Office</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">參與成員</div>
+                                            <div class="block-inner-meeter">
+                                                <ul class="block-meeter">
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100000256309643/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100002332557048/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">討論事項</div>
+                                            <ol>
+                                                <li>Web/App首頁設計</li>
+                                                <li>時程規劃</li>
+                                                <li>人事安排</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="today-meeting-item">
+                                <div class="block-meeting">
+                                    <div class="block-meeting-header">
+                                        <div class="block-meeting-time">16:00am </div>
+                                        <div class="block-meeting-title">
+                                            <a href="#" title="Daydream Lab Web Case “Cheers”內部檢視會議3">Daydream Lab Web Case “Cheers”內部檢視會議３</a>
+                                        </div>
+                                        <span class="block-container-toggle"></span>
+                                    </div>
+                                    <div class="block-meeting-container">
+                                        <div class="block-inner-container">
+                                            <div class="flex-align-center">
+                                                <div class="author-avatar">
+                                                    <img src="http://graph.facebook.com/100003932160896/picture">
+                                                </div>
+                                                <div class="author-box">
+                                                    <div class="author-msg">Sarah Hsiao</div>
+                                                    <div class="author-meta"><span title="2017年11月9日 12:20">23 分鐘前</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-meeting-intro">相關議程，請參與的會議同仁準備各項資料與準時與會，感謝：）</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">會議地點</div>
+                                            <div class="block-inner-position">Daydream Lab Office</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">參與成員</div>
+                                            <div class="block-inner-meeter">
+                                                <ul class="block-meeter">
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100000256309643/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100002332557048/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">討論事項</div>
+                                            <ol>
+                                                <li>Web/App首頁設計</li>
+                                                <li>時程規劃</li>
+                                                <li>人事安排</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="today-meeting-item">
+                                <div class="block-meeting">
+                                    <div class="block-meeting-header">
+                                        <div class="block-meeting-time">18:00am </div>
+                                        <div class="block-meeting-title">
+                                            <a href="#" title="Daydream Lab Web Case “Cheers”內部檢視會議4">Daydream Lab Web Case “Cheers”內部檢視會議</a>
+                                        </div>
+                                        <span class="block-container-toggle"></span>
+                                    </div>
+                                    <div class="block-meeting-container">
+                                        <div class="block-inner-container">
+                                            <div class="flex-align-center">
+                                                <div class="author-avatar">
+                                                    <img src="http://graph.facebook.com/100003932160896/picture">
+                                                </div>
+                                                <div class="author-box">
+                                                    <div class="author-msg">Sarah Hsiao</div>
+                                                    <div class="author-meta"><span title="2017年11月9日 12:20">23 分鐘前</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-meeting-intro">相關議程，請參與的會議同仁準備各項資料與準時與會，感謝：）</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">會議地點</div>
+                                            <div class="block-inner-position">Daydream Lab Office</div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">參與成員</div>
+                                            <div class="block-inner-meeter">
+                                                <ul class="block-meeter">
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100000256309643/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100002332557048/picture"></div></li>
+                                                    <li><div class="user-avatar"><img src="http://graph.facebook.com/100001670730615/picture"></div></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block-inner-container">
+                                            <div class="block-inner-title">討論事項</div>
+                                            <ol>
+                                                <li>Web/App首頁設計</li>
+                                                <li>時程規劃</li>
+                                                <li>人事安排</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-footer">
+                        <div class="block-more">
+                            <div class="block-text">查看所有會議 <i class="p-icon p-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
