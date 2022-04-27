@@ -4,7 +4,7 @@
 </div>
 
 ### 參與專案清單
-- <img style="margin-right: 0.5rem;" height="12px" src="https://assets.codepen.io/1759070/vue.png" />[Zerone - 2020零壹解決方案日](index.md)
+- ![](https://assets.codepen.io/1759070/vue_1.png) [Zerone - 2020零壹解決方案日](index.md)
   - [開發](index.md) | [Demo](index.md) | [正式](index.md) | [Git](index.md) | [設計](index.md)
 - <img style="margin-right: 0.5rem;" height="12px" src="https://assets.codepen.io/1759070/vue.png" />[Zerone - THub](index.md)
 - <img style="margin-right: 0.5rem;" height="12px" src="https://assets.codepen.io/1759070/vue.png" />[Zerone](index.md)
