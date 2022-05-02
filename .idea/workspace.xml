@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec0d89e-4331-43ed-90df-b792c5c2d52e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +18,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="28NLtQtC66NCTiPmunNFZzOdMR7" />
   <component name="ProjectViewState">
@@ -64,7 +70,7 @@
       <workItem from="1651117228199" duration="1226000" />
       <workItem from="1651118462480" duration="19127000" />
       <workItem from="1651200197897" duration="11128000" />
-      <workItem from="1651481280263" duration="6164000" />
+      <workItem from="1651481280263" duration="9100000" />
     </task>
     <servers />
   </component>
