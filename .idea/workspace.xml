@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec0d89e-4331-43ed-90df-b792c5c2d52e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Project.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/image/maintenance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/ZAT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/capacitor.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/icon/capacitor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/framework7.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/icon/framework7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/html5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/icon/html5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/joomla.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/icon/joomla.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/off.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/finish.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/on.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/develop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/vue.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/icon/vue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/image/wordpress.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/image/icon/wordpress.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/index.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -73,6 +64,7 @@
       <workItem from="1651117228199" duration="1226000" />
       <workItem from="1651118462480" duration="19127000" />
       <workItem from="1651200197897" duration="11128000" />
+      <workItem from="1651481280263" duration="6164000" />
     </task>
     <servers />
   </component>
