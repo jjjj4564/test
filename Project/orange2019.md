@@ -33,6 +33,7 @@ npm run dev
 npm run build
 ```
 
+
 ### 後端
 
 此專案須設置後端環境，直接詢問後端
@@ -49,12 +50,12 @@ master            | https://github.com/DaydreamLab/orange_group_2019            
 ### 大橘
 Branch            | link                                                                       | Description
 :---------------- | :------------------------------------------------------------------------- | :---
-master            | https://github.com/DaydreamLab/orange_group_2019                           |
+master            | https://github.com/DaydreamLab/orange_shabu_2019                           |
 
 ### 小橘
 Branch            | link                                                                       | Description
 :---------------- | :------------------------------------------------------------------------- | :---
-master            | https://github.com/DaydreamLab/orange_group_2019                           |
+master            | https://github.com/DaydreamLab/orange_extension_2019                       |
 
 
 ## 正式站(Prod)
@@ -84,6 +85,6 @@ Web               | link                                                        
 
 ## 後台帳號密碼
 
-帳號：`superadmin`
+帳號：`admin@daydream-lab.com`
 
 密碼：`daydream5182`

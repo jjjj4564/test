@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec0d89e-4331-43ed-90df-b792c5c2d52e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/doggy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/flysolo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/jtailsShop.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/ladyWeider.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/manbo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/mgwater.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/nestle.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/orange2019.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/sansin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/denwellApp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/planXcape.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/chiayi.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/chiayi.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/cw.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/cw.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/joomla.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/joomla.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/jtailsShop.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/jtailsShop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/orange2019.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/orange2019.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/orange2020.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/orange2020.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +80,8 @@
       <workItem from="1651481280263" duration="14366000" />
       <workItem from="1651549346287" duration="295000" />
       <workItem from="1651549658209" duration="6239000" />
-      <workItem from="1651556063267" duration="5604000" />
+      <workItem from="1651556063267" duration="7492000" />
+      <workItem from="1651566271760" duration="1894000" />
     </task>
     <servers />
   </component>
