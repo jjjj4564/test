@@ -8,62 +8,8 @@
 
 ----
 
-## 清單欄位說明
-
-### Status
-
-Status                        | Name   | Description
-:---------------------------- | :----- | :----
-[![develop]][develop]         | 開發中 | 專案開發中、尚有功能未開發完成，可點擊專案名稱查看代辦事項
-[![maintenance]][maintenance] | 維護中 | 尚未結案的專案、維護中的公司產品
-[![finish]][finish]           | 已完成 | 已完成開發
-
-### Web Link
-
-Web Link | Name   | Description                      
-:------- | :----- | :---
-Prod     | 正式站 | 因移交、結案等原因，如果介面跟公司當初設計的不一樣的話不會列上來
-Demo     | 示範站 | 通常是公司的產品才會有架示範站供業務推廣使用，如：Dingsomething, iBobee, iPetBooking
-Dev      | 開發站 | 有些網站因年代久遠等其他原因，導致網站關閉的話不會列上來
-Admin    | 後台   | 後台大致上分成Joomla、Wordpress，Vue部分專案會因專案需求不會有後台，後台密碼可點擊專案名稱查看
-
-### Frontend
-
-如有專案問題可以詢問其他有參與專案的前端
-
-大家都很Nice :)
-
-「前端一心，其利斷金」
-
-Backend   | Status
-:-------- | :---
-Jackie ♛  | [![develop]][develop] 在職
-Anna      | [![finish]][finish] 已離職
-Alice     | [![finish]][finish] 已離職
-Zat       | [![finish]][finish] 已離職 
-Tim       | [![develop]][develop] 在職
-Ryan      | [![finish]][finish] 已離職
-Branson   | [![finish]][finish] 已離職
-Ruby      | [![develop]][develop] 在職
-Simon     | [![finish]][finish] 已離職
-Fandow    | [![develop]][develop] 在職
-
-### Backend
-
-如需連線至專案主機, 設置後端環境相關問題，可以詢問後端
-
-Backend   | Status
-:-------- | :---
-Jackie ♛  | [![develop]][develop] 在職
-Alex      | [![finish]][finish] 已離職
-Jordan    | [![develop]][develop] 在職
-Jerry     | [![develop]][develop] 在職
-Ryan      | [![finish]][finish] 已離職
-Mika      | [![develop]][develop] 在職
-
-----
-
 ## 清單
+[欄位說明](#清單欄位說明)
              
 <!-- <br>是Branch的縮寫 -->   
 
@@ -85,7 +31,7 @@ Created         | Project                                                       
 :-------------- | :----------------------------------------------------------------- | :---------------------------: | :----------------------------------------------------------------------------------------- | :----------------------- | :------------------ | :---
 2020            | [![vue]][vue] [Zero One](index.md)                                 | [![maintenance]][maintenance] | [zero_one][git-zerone] <br> master                                                         | Zat, Tim                 | Jerry               | [Dev](https://zerone.daydream-lab.com) - [Admin](https://zerone.daydream-lab.com/dashboard)
 2020            | [![vue]][vue] [小捲尾 J' Tails - 預約站](index.md)                 | [![finish]][finish]           | [dingsomething-site][git-dingsomething-site--jtails-develop-v1]                            | Zat, Ruby, Simon         | Jordan              | [Dev](https://jtails.daydream-lab.com) - [Admin](https://admin.jtails.daydream-lab.com)
-2020            | [![vue]][vue] [iBobee](index.md)                                   | [![finish]][finish]           | [dingsomething-site][git-dingsomething-site--ibobee-develop-v1] <br> ibobee/develop/v1     | Zat, Tim                 | Jordan              |[Prod](https://ibobee.tw/wude) - [Admin](https://admin.ibobee.tw) <br> [Dev](https://ibobee.daydream-lab.com/wude) - [Admin](https://admin.ibobee.daydream-lab.com)
+2020            | [![vue]][vue] [iBobee](index.md)                                   | [![finish]][finish]           | [dingsomething-site][git-dingsomething-site--ibobee-develop-v1] <br> ibobee/develop/v1     | Zat, Tim                 | Jordan              | [Prod](https://ibobee.tw/wude) - [Admin](https://admin.ibobee.tw) <br> [Dev](https://ibobee.daydream-lab.com/wude) - [Admin](https://admin.ibobee.daydream-lab.com)
 2020            | [![vue]][vue] [Zero One - 遊戲](index.md)                          | [![finish]][finish]           | [zerone_game][git-zerone-game] <br> main                                                   | Zat, Tim                 | Jerry               | [Dev](https://demo.daydream-lab.com/zerone_game)
 2020            | [![vue]][vue] [橘色 - 集團](orange2020.md)                         | [![finish]][finish]           | [orangegroup][git-orange-group] <br> master                                                | Zat, Tim                 | Jerry               | [Prod](https://orangeshabu.com) - [Admin](https://orangeshabu.com/dashboard) <br> [Dev](https://orangeshabu.daydream-lab.com) - [Admin](https://orangeshabu.daydream-lab.com/dashboard)
 2020            | [![vue]][vue] [橘色 - 大橘](orange2020.md)                         | [![finish]][finish]           | [orange_shabushabu][git-orange-shabushabu] <br> master                                     | Zat, Tim                 | Jerry               | [Prod](https://orangeshabushabu.com) - [Admin](https://orangeshabu.com/dashboard) <br> [Dev](https://orangeshabushabu.daydream-lab.com) - [Admin](https://orangeshabu.daydream-lab.com/dashboard)
@@ -99,12 +45,12 @@ Created         | Project                                                       
 Created         | Project                                                            | Status                        | Git                                                                                        | Frontend                 | Backend             | Web Link
 :-------------- | :----------------------------------------------------------------- | :---------------------------: | :----------------------------------------------------------------------------------------- | :----------------------- | :------------------ | :---
 2019<br> - 2022 | [![vue]][vue] [Dingsomething](index.md)                            | [![finish]][finish]           | [dingsomething-site][git-dingsomething-site--develop-v3] <br> develop/v3                   | Anna, Zat                | Jordan              | [Prod](https://dingsomething.com) - [Admin](https://admin.dingsomething.com) <br> [Demo](https://demo.dingsomething.com/demo1) - [Admin](https://admin.demo.dingsomething.com) <br> [Dev](https://dingsomething.daydream-lab.com/anna) - [Admin](https://admin.dingsomething.daydream-lab.com)
-2019<br> - 2020 | [![vue]][vue] [Zerone 零壹科技 / 內科之心](index.md)               | [![finish]][finish]           | [dingsomething-site][git-dingsomething-site--thub-develop-v1] <br> thub/develop/v1         | Zat, Tim                 | Jordan              |
-2019            | [![vue]][vue] [BSOS](index.md)                                     | [![finish]][finish]           | [bsos][git-bsos] <br> master                                                               | Zat                      | Jerry               | [Dev](https://bsos.daydream-lab.com) - [Admin](https://bsos.daydream-lab.com/dashboard)
-2019            | [![vue]][vue] [顯示器](index.md)                                   | [![finish]][finish]           | [cipo][git-cipo] <br> master                                                               | Anna, Zat, Ruby          | Jerry               | [Dev](https://cipo.daydream-lab.com) - [Admin](http://www.display.org.tw/dashboard)
-2019            | [![vue]][vue] [Sianna](index.md)                                   | [![finish]][finish]           | [sianna][git-sianna] <br> master                                                           | Zat                      | Jordan              | [Dev](https://sianna.daydream-lab.com)
+2019<br> - 2020 | [![vue]][vue] [Zerone 零壹科技 / 內科之心](thub.md)                | [![finish]][finish]           | [dingsomething-site][git-dingsomething-site--thub-develop-v1] <br> thub/develop/v1         | Zat, Tim                 | Jordan              |
+2019            | [![vue]][vue] [BSOS](bsos.md)                                      | [![finish]][finish]           | [bsos][git-bsos] <br> master                                                               | Zat                      | Jerry               | [Dev](https://bsos.daydream-lab.com) - [Admin](https://bsos.daydream-lab.com/dashboard)
+2019            | [![vue]][vue] [顯示器](cipo.md)                                    | [![finish]][finish]           | [cipo][git-cipo] <br> master                                                               | Anna, Zat, Ruby          | Jerry               | [Dev](https://cipo.daydream-lab.com) - [Admin](http://www.display.org.tw/dashboard)
+2019            | [![vue]][vue] [Sianna](sianna.md)                                  | [![finish]][finish]           | [sianna][git-sianna] <br> master                                                           | Zat                      | Jordan              | [Dev](https://sianna.daydream-lab.com)
 2019            | [![joomla]][joomla] [2019通訊大賽](joomla.md)                      | [![finish]][finish]           |                                                                                            | Anna, Zat                | Jerry, Alex         |
-2019            | [![joomla]][joomla] [華庭聚](joomla.md)                            | [![finish]][finish]           |                                                                                            | Zat                      | Alex                |
+2019            | [![joomla]][joomla] [華庭聚](joomla.md)                            | [![finish]][finish]           |                                                                                            | Anna, Zat                | Alex                | [Dev](https://gathering.tw) - [Admin](https://gathering.tw/administrator)
 
 ### 2018
 Created         | Project                                                            | Status                        | Git                                                                                        | Frontend                 | Backend             | Web Link
@@ -112,8 +58,8 @@ Created         | Project                                                       
 2018<br> - 2019 | [![vue]][vue] [橘色 / 橘色涮涮屋 - 集團](orange2019.md)            | [![finish]][finish]           | [orange_group_2019][git-orange-group-2019] <br> master                                     | Zat                      | Jordan, Alex, Jerry | [Dev](https://orangeshabu2019.daydream-lab.com) - [Admin](https://orangeshabu2019.daydream-lab.com/dashboard)
 2018<br> - 2019 | [![vue]][vue] [橘色 / 橘色涮涮屋 - 大橘](orange2019.md)            | [![finish]][finish]           | [orange_shabu_2019][git-orange-shabu-2019] <br> master                                     | Zat                      | Jordan, Alex, Jerry | [Dev](https://orangeshabushabu2019.daydream-lab.com) - [Admin](https://orangeshabu2019.daydream-lab.com/dashboard)
 2018<br> - 2019 | [![vue]][vue] [橘色 / 橘色涮涮屋 - 小橘](orange2019.md)            | [![finish]][finish]           | [orange_extension_2019][git-orange-extension-2019] <br> master                             | Alice, Zat               | Jordan, Alex, Jerry | [Dev](https://extension1byorange2019.daydream-lab.com) - [Admin](https://orangeshabu2019.daydream-lab.com/dashboard)
-2018            | [![vue]][vue] [cms](index.md)                                      | [![finish]][finish]           | [cms][git-cms] <br> master                                                                 | Anna, Zat, Tim           | Jordan, Alex, Jerry | 
-2018            | [![vue]][vue] [EDENA](index.md)                                    | [![finish]][finish]           | [edena_2018][git-edena] <br> master                                                        | Anna, Zat                | Jordan              | [Dev](https://edena.daydream-lab.com)
+2018            | [![vue]][vue] [CMS](cms.md)                                        | [![finish]][finish]           | [cms-frontend][git-cms-frontend] <br> master                                               | Anna, Zat, Tim           | Jordan, Alex, Jerry | 
+2018            | [![vue]][vue] [EDENA](edena.md)                                    | [![finish]][finish]           | [edena_2018][git-edena] <br> master                                                        | Zat                      | Jordan              | [Dev](https://edena.daydream-lab.com)
 2018            | [![vue]][vue] [planXcape](planXcape.md)                            | [![maintenance]][maintenance] | [planXcape][git-planxcape] <br> master                                                     | Zat, Anna, Alice, Jackie | Jordan, Alex, Jerry | [Prod](https://planxcape.com), [Dev](https://planxcape.daydream.com)
 2018            | [![framework7]][framework7] [planXcape - App](planXcape.md)        | [![finish]][finish]           | [planXcape][git-planxcape--app] <br> App                                                   | Anna, Zat                | Jordan              | 
 2018            | [![framework7]][framework7] [典華App](denwellApp.md)               | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Jackie, Alex        | 
@@ -122,14 +68,14 @@ Created         | Project                                                       
 ### 2017
 Created         | Project                                                            | Status                        | Git                                                                                        | Frontend                 | Backend             | Web Link
 :-------------- | :----------------------------------------------------------------- | :---------------------------: | :----------------------------------------------------------------------------------------- | :----------------------- | :------------------ | :---
-2017<br> - 2018 | [![joomla]][joomla] [收藏家 / 台灣防潮科技](joomla.md)             | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat, Alice | Alex                |
+2017<br> - 2018 | [![joomla]][joomla] [收藏家 / 台灣防潮科技](joomla.md)             | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat, Alice | Alex                | [Prod](https://www.drytech.com.tw) - [Admin](https://www.drytech.com.tw/administrator)
 2017            | [![joomla]][joomla] [2017通訊大賽](joomla.md)                      | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                | 
 2017            | [![joomla]][joomla] [Bottle Price](joomla.md)                      | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
 2017            | [![joomla]][joomla] [亞太地區美感教育研究室](joomla.md)            | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
 2017            | [![joomla]][joomla] [豐FOOD](joomla.md)                            | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
 2017            | [![joomla]][joomla] [me2we](joomla.md)                             | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
 2017            | [![joomla]][joomla] [wota](joomla.md)                              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
-2017            | [![joomla]][joomla] [大發輪船](joomla.md)                          | [![finish]][finish]           |                                                                                            | Jackie, Alice, Anna, Zat | Alex                |
+2017            | [![joomla]][joomla] [大發輪船](joomla.md)                          | [![finish]][finish]           |                                                                                            | Jackie, Alice, Anna, Zat | Alex                | [Prod](https://www.dafaship.com) - [Admin](https://www.drytech.com.tw/administrator)
 2017            | [![HTML5]][HTML5] [天下](cw.md)                                    | [![finish]][finish]           |                                                                                            | Zat                      |                     |
 2017            | [![HTML5]][HTML5] [腳印官網](doggy.md)                             | [![finish]][finish]           |                                                                                            | Zat                      | Alex                |
 2017            | [![HTML5]][HTML5] [雀巢媽媽](nestle.md)                            | [![finish]][finish]           |                                                                                            | Zat                      |                     |
@@ -137,13 +83,67 @@ Created         | Project                                                       
 ### 2016
 Created         | Project                                                            | Status                        | Git                                                                                        | Frontend                 | Backend             | Web Link
 :-------------- | :----------------------------------------------------------------- | :---------------------------: | :----------------------------------------------------------------------------------------- | :----------------------- | :------------------ | :---
-2016<br> - 2017 | [![joomla]][joomla] [程憲治 / Senji程憲治](joomla.md)              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
-2016            | [![joomla]][joomla] [SIPO](joomla.md)                              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
-2016            | [![joomla]][joomla] [典華](joomla.md)                              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
-2016            | [![joomla]][joomla] [MELTEN](joomla.md)                            | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
-2016            | [![joomla]][joomla] [新樂心](joomla.md)                            | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
+2016<br> - 2017 | [![joomla]][joomla] [程憲治 / Senji程憲治](joomla.md)              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                | 
+2016            | [![joomla]][joomla] [SIPO](joomla.md)                              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                | 
+2016            | [![joomla]][joomla] [典華](joomla.md)                              | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                | 
+2016            | [![joomla]][joomla] [MELTEN](joomla.md)                            | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                | [Prod](https://www.melten.com) - [Admin](https://www.melten.com/administrator)
+2016            | [![joomla]][joomla] [新樂心](joomla.md)                            | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                | 
 2017            | [![joomla]][joomla] [腳印俱樂部](joomla.md)                        | [![finish]][finish]           |                                                                                            | Jackie, Anna, Zat        | Alex                |
 
+----
+
+## 欄位說明
+
+### Status
+
+Status                        | Name   | Description
+:---------------------------- | :----- | :----
+[![develop]][develop]         | 開發中 | 專案開發中、尚有功能未開發完成，可點擊專案名稱查看代辦事項
+[![maintenance]][maintenance] | 維護中 | 尚未結案的專案、維護中的公司產品
+[![finish]][finish]           | 已完成 | 已完成開發
+
+### Web Link
+
+Web Link | Name   | Description
+:------- | :----- | :---
+Prod     | 正式站 | 因移交、結案等原因，如果介面跟公司當初設計的不一樣的話不會列上來
+Demo     | 示範站 | 通常是公司的產品才會有架示範站供業務推廣使用，如：Dingsomething, iBobee, iPetBooking
+Dev      | 開發站 | 有些網站因年代久遠等其他原因，導致網站關閉的話不會列上來
+Admin    | 後台   | 後台大致上分成Joomla、Wordpress，Vue部分專案會因專案需求不會有後台，後台密碼可點擊專案名稱查看
+
+### Frontend
+
+如有專案問題可以詢問其他有參與專案的前端
+
+大家都很Nice :)
+
+「前端一心，其利斷金」
+
+Backend   | Status
+:-------- | :---
+Jackie ♛  | [![develop]][develop] 在職
+Anna      | [![finish]][finish] 已離職
+Alice     | [![finish]][finish] 已離職
+Zat       | [![finish]][finish] 已離職
+Tim       | [![develop]][develop] 在職
+Ryan      | [![finish]][finish] 已離職
+Branson   | [![finish]][finish] 已離職
+Ruby      | [![develop]][develop] 在職
+Simon     | [![finish]][finish] 已離職
+Fandow    | [![develop]][develop] 在職
+
+### Backend
+
+如需連線至專案主機, 設置後端環境相關問題，可以詢問後端
+
+Backend   | Status
+:-------- | :---
+Jackie ♛  | [![develop]][develop] 在職
+Alex      | [![finish]][finish] 已離職
+Jordan    | [![develop]][develop] 在職
+Jerry     | [![develop]][develop] 在職
+Ryan      | [![finish]][finish] 已離職
+Mika      | [![develop]][develop] 在職
 
 <!-- Avatar -->
 [ZAT-24]: https://avatars.githubusercontent.com/u/31230074?s=24&v=4
@@ -173,7 +173,7 @@ Created         | Project                                                       
 [git-dingsomething-site--ibobee-develop-v1]:    https://github.com/DaydreamLab/dingsomething-site/tree/ibobee/develop/v1
 [git-dingsomething-site--develop-v3]:           https://github.com/DaydreamLab/dingsomething-site/tree/develop/v3
 [git-planxcape]:                                https://github.com/DaydreamLab/planXcape
-[git-cms]:                                      https://github.com/DaydreamLab/cms
+[git-cms-frontend]:                             https://github.com/DaydreamLab/cms-frontend
 [git-cipo]:                                     https://github.com/DaydreamLab/cipo
 [git-orange-group]:                             https://github.com/DaydreamLab/orangegroup
 [git-orange-shabushabu]:                        https://github.com/DaydreamLab/orange_shabushabu
