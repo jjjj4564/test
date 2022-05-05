@@ -98,6 +98,6 @@ Web               | link                                                        
 
 ## 後台帳號密碼
 
-帳號：`superadmin`
+帳號：`admin@daydream-lab.com`
 
 密碼：`daydream5182`

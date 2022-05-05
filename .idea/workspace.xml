@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec0d89e-4331-43ed-90df-b792c5c2d52e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/bsos.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/cipo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/edena.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/sianna.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/thub.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/dingsomething.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/ibobee.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/ipetbooking.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/jtailsReservation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/mobile2021.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/tusa.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/zerone2020.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/zerone2021.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image/icon/phaser3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/flysolo.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/flysolo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/404.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/orange2020.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/orange2020.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/sianna.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/sianna.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/thub.md" beforeDir="false" afterPath="$PROJECT_DIR$/Project/thub.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/develop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/finish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/maintenance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/image/red.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image/icon" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/image/icon" />
       <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$/assets/image" />
       <recent name="$PROJECT_DIR$" />
@@ -83,7 +95,9 @@
       <workItem from="1651556063267" duration="7492000" />
       <workItem from="1651566271760" duration="1894000" />
       <workItem from="1651632802847" duration="208000" />
-      <workItem from="1651633681753" duration="6064000" />
+      <workItem from="1651633681753" duration="14254000" />
+      <workItem from="1651657908289" duration="3522000" />
+      <workItem from="1651719248419" duration="7329000" />
     </task>
     <servers />
   </component>

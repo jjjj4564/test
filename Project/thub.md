@@ -2,8 +2,9 @@
 ### aka. T-hub
 
 ## 專案說明
-- t-hub是Dingsomething元宇宙的一部分
-- 由Zat建置網站, Tim協作處理部分頁面, 後端為Jordan
+t-hub是Dingsomething元宇宙成員之一，短程開發的專案，未上線，已停止開發
+
+由Zat建置網站, Tim協作處理部分頁面, 後端為Jordan
 
 
 ## 開發方式
